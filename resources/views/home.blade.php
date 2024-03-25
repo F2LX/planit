@@ -1,6 +1,10 @@
 @extends('ui.main')
 
 @section('content')
+    
+    <div class="w-100 d-flex justify-content-center">
+
+    </div>
     <div class="wrapper-main text-center d-flex align-center justify-content-center flex-direction-column">
         <div class="section-search">
             <h2 id="main">Plan Your Event Now!</h2>
@@ -12,7 +16,8 @@
         </div>
         
         <div class="section-top-vendor">
-            <h2 class="text-center">Plan Your Event Now!</h2>
+            <img class="vendor-top-img" src="{{ asset("img/homecouples.png") }}" alt="">
+            <h2 class="text-center text-before-img">Plan Your Event Now!</h2>
             <div class="d-flex w-100 align-center justify-space-between flex-wrap">
                 <div class="card">
                     <img src="" alt="">

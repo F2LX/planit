@@ -49,9 +49,13 @@ class AuthController extends Controller
             'email' => 'required|email',
             'password' => 'required'
         ]);
-        User::create($data);
-        
+
+        // Encrypt using BCRYPT
         $data['password']=bcrypt($data['password']);
+        
+        User::create($data);    
+        
+        
 
         return redirect()->intended("/login");
     }

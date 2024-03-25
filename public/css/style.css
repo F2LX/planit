@@ -60,8 +60,21 @@ a {
 
 .wrapper-main {
     height: fit-content;
+    position: relative;
+    z-index: 1;
     padding: 50px 0;
     width: 100%;
+    background: url('../img/homebg-edit.png') no-repeat;
+    background-size: 100%;
+}
+
+.wrapper-main {
+    z-index: 3;
+}
+.vendor-top-img {
+    position: absolute;
+    z-index: 2;
+    top: 0;
 }
 
 .h-100 {
@@ -106,12 +119,17 @@ a {
     padding: 5px 10px;
     border-radius: 5px;
 }
+.btn-green {
+    background-color: green;
+}
 
 .searchbar {
     width: 800px;
 }
 
 .searchbar >input{
+    position: relative;
+    z-index: 3 !important;
     background-color: #F9ECC9;
     border: 0;
     padding: 18px;

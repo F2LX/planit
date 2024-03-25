@@ -7,6 +7,20 @@ use App\Http\Controllers\ChatController;
 use App\Http\Controllers\AdminController;
 
 // TO BE ADDED: Middleware Grouping
+
+Route::get('/profile', function() {
+    return view('user.profile');
+});
+Route::get('/home', function() {
+    return view('user.home');
+});
+
+// Route::get('/contoh2', function() {
+//     return view('home');
+// });
+
+
+
 Route::get('/dashboard', [AdminController::class, 'index']);
 
 Route::get('/', [AuthController::class, 'index']);

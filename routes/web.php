@@ -14,6 +14,9 @@ Route::get('/profile', function() {
 Route::get('/home', function() {
     return view('user.home');
 });
+Route::get('/orderSummary', function() {
+    return view('user.orderSummary');
+});
 
 // Route::get('/contoh2', function() {
 //     return view('home');

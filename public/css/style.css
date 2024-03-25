@@ -213,6 +213,7 @@ button {
     color: white;
     border: 3px solid limegreen;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+    transition: 0.3s ease;
 }
 
 .btn-green:hover{
@@ -226,6 +227,7 @@ button {
     color: white;
     border: 3px solid red;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+    transition: 0.3s ease;
 }
 
 .btn-red:hover{
@@ -439,3 +441,85 @@ div.content {
     justify-content: space-between;
 }
 
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+    border: 1px solid #5F6F52;
+    text-align: center;
+    padding: 8px;
+}
+
+th{
+    background-color: #5F6F52;
+    color: white;
+}
+
+.button-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.view{
+    background-color: limegreen;
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.update{
+    background-color: #2E61C3;
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.report{
+    background-color: red;
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.view:hover, .update:hover, .report:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+}
+
+.add-order{
+    background-color: #5F6F52;
+    text-align: center;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+    border: 3px solid #5F6F52;
+    transition: 0.3s ease;
+}
+
+.add-order:hover{
+    border: 3px solid #5F6F52;
+    background-color: #fefae0;
+    color: #5F6F52;
+}

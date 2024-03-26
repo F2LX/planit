@@ -8,8 +8,8 @@ use App\Http\Controllers\AdminController;
 
 // TO BE ADDED: Middleware Grouping
 
-Route::get('/profile', function() {
-    return view('user.profile');
+Route::get('/profileUser', function() {
+    return view('user.profileUser');
 });
 Route::get('/home', function() {
     return view('user.home');

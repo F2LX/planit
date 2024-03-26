@@ -18,6 +18,13 @@ Route::get('/orderSummary', function() {
     return view('user.orderSummary');
 });
 
+Route::get('/orderSummaryView', function() {
+    return view('user.orderSummaryView');
+});
+Route::get('/chatUser', function() {
+    return view('user.chatUser');
+});
+
 // Route::get('/contoh2', function() {
 //     return view('home');
 // });

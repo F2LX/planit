@@ -20,8 +20,33 @@ body {
     background-color: #5E7153;
     color: #FCFCE4;
     padding: 10px;
-    width: 30%;
+    width: 20%;
 }
+
+.menu-nav li {
+    height: 50px;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+
+}
+
+.menu-nav li:hover {
+    transition: 0.3s ease;
+    border-radius: 10px;
+    background: #839678;
+}
+
+.menu-nav li span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.menu-nav li {
+    padding: 10px 12px;
+    border-bottom: 1px solid grey;
+}
+
 .menu > h2,ul > li {
     padding: 0 20px;
 }

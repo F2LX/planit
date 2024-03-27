@@ -13,6 +13,9 @@
     {{-- Preconnect Google Icons --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="{{ asset("js/popUp.js") }}"></script>
+    
+    {{-- Import Animation CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/animation.css") }}">
 
     <title>User Area - Plan It</title>
 </head>
@@ -22,10 +25,10 @@
         <div class="menu">
             <h2>User Area</h2>
             <ul class="menu-nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Order Summary</a></li>
-                <li><a href="">Wallet</a></li>
-                <li><a href="">Contact Support</a></li>
+                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">home</span>Home</a></li>
+                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">description</span>Order Summary</a></li>
+                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">account_balance_wallet</span>Wallet</a></li>
+                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">contact_support</span>Contact Support</a></li>
             </ul>
         </div>
         <div class="content p-5">

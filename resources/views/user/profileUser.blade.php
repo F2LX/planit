@@ -42,9 +42,9 @@
                 <input type="text" name="" id="" value="McDidi@gmail.com" disabled>
 
                 <div class="d-flex flex-direction-row profile-button">
-                    <button class="btn btn-green">Update Profil</button>
+                    <button class="btn btn-green mt-70">Update Profil</button>
                     
-                        <button class="btn btn-red d-flex align-center ml-5">
+                        <button class="btn btn-red d-flex mt-70 align-center ml-5">
                             <span class="material-symbols-outlined">
                                 logout
                             </span>

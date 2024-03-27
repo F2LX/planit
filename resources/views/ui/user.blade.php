@@ -12,7 +12,8 @@
 
     {{-- Preconnect Google Icons --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
+    <script src="{{ asset("js/popUp.js") }}"></script>
+
     <title>User Area - Plan It</title>
 </head>
 <body class="dashboard">

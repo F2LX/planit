@@ -99,7 +99,7 @@
                 <div class="info">
                     <h2>Taylor Series</h2>
                     <p>Birthday Vendor</p>
-                    <p>Location: New York</p>
+                    <p>Location: Kalibata</p>
                     <p>Email: tayloring@example.com</p>
                 </div>
             </div>

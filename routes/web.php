@@ -14,15 +14,23 @@ Route::get('/profileUser', function() {
 Route::get('/home', function() {
     return view('user.home');
 });
-Route::get('/orderSummary', function() {
-    return view('user.orderSummary');
+Route::get('/orderSummaryUser', function() {
+    return view('user.orderSummaryUser');
 });
-
+Route::get('/contactSupportUser', function() {
+    return view('user.contactSupportUser');
+});
 Route::get('/orderSummaryView', function() {
     return view('user.orderSummaryView');
 });
 Route::get('/chatUser', function() {
     return view('user.chatUser');
+});
+Route::get('/homeUser', function() {
+    return view('user.homeUser');
+});
+Route::get('/viewOrderSummaryUser', function() {
+    return view('user.viewOrderSummaryUser');
 });
 
 // Route::get('/contoh2', function() {

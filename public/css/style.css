@@ -51,6 +51,10 @@ body {
     padding: 0 20px;
 }
 
+.title img {
+    margin-left: 30px;
+    width: 85px;
+}
 
 .title > h2 {
     padding: 0 20px;

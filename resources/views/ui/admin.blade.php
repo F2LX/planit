@@ -15,6 +15,11 @@
 
     {{-- Import Animation CSS --}}
     <link rel="stylesheet" href="{{ asset("css/animation.css") }}">
+
+    {{-- Import Preloader CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
+
+    <script src="{{ asset("js/preloader.js") }}"></script>
     
     <title>Plan It - Admin Area</title>
 </head>
@@ -31,6 +36,7 @@
                 <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">contact_support</span>Contact Support</a></li>
             </ul>
         </div>
+        @include('ui.preloader')
         <div class="content p-5">
             @yield('content')
         </div>

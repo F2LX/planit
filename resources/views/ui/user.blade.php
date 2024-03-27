@@ -12,11 +12,14 @@
 
     {{-- Preconnect Google Icons --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="{{ asset("js/popUp.js") }}"></script>
     
     {{-- Import Animation CSS --}}
     <link rel="stylesheet" href="{{ asset("css/animation.css") }}">
 
+    {{-- Import Preloader CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
+
+    <script src="{{ asset("js/preloader.js") }}"></script>
     <title>User Area - Plan It</title>
 </head>
 <body class="dashboard">
@@ -31,6 +34,7 @@
                 <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">contact_support</span>Contact Support</a></li>
             </ul>
         </div>
+        @include('ui.preloader')
         <div class="content p-5">
             @yield('content')
         </div>

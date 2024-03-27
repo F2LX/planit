@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Plan It</title>
+
+    {{-- Import Preloader CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
+
+    <script src="{{ asset("js/preloader.js") }}"></script>    
 </head>
 <body>
     <nav class="d-flex main-nav justify-space-between align-center">
         <div class="title">
-                <h2>Plan It!</h2>
+                <img src="{{ asset("img/logo.png") }}" alt="">
          </div>
             <ul class="d-inline text-right d-flex align-center">
                 <li>Home</li>
@@ -22,6 +27,7 @@
                     </span><span class="ml-2">Login</span></a></li>
             </ul>
     </nav>
+    @include('ui.preloader')
     <div>
         @yield("content")
     </div>

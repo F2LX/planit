@@ -328,9 +328,9 @@
                     <td>$900</td>
                     <td>
                         <div class="d-flex button-action">
-                            <button class="view">View</button>
-                            <button class="ml-3 update">Update</button>
-                            <button class="ml-3 report">Report</button>
+                            <a href="#popup" class="view">View</a>
+                            <a href="#popupUpdate" class="update">Update</a>
+                            <a href="#popupReport" class="report">Report</a>
                         </div>
                     </td>
                 </tr>
@@ -340,9 +340,9 @@
                     <td>$450</td>
                     <td>
                         <div class="d-flex button-action">
-                            <button class="view">View</button>
-                            <button class="ml-3 update">Update</button>
-                            <button class="ml-3 report">Report</button>
+                            <a href="#popup" class="view">View</a>
+                            <a href="#popupUpdate" class="update">Update</a>
+                            <a href="#popupReport" class="report">Report</a>
                         </div>
                     </td>
                 </tr>
@@ -353,14 +353,25 @@
                     <td>
                         <div class="d-flex button-action">
                             <a href="#popup" class="view">View</a>
-                            <a href="#popup2" class="update">Update</a>
-                            <a href="#popup3" class="report">Report</a>
+                            <a href="#popupUpdate" class="update">Update</a>
+                            <a href="#popupReport" class="report">Report</a>
                         </div>
                     </td>
                 </tr>
             </table>
         </div>
-        <button class="add-order">Add New Order</button>
+        <a href="#popupSuccess" class="add-order">Add New Order</a>
+
+        <div class="popup" id="popupSuccess">
+            <div class="popupSuccess-content">
+                <span class="material-symbols-outlined">
+                    task_alt
+                </span>
+                <h3>Success</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Okay</button>
+            </div>
+        </div>
 
         <div class="popup" id="popup">
             <div class="popup-content">
@@ -456,6 +467,79 @@
                             <h2><span class="percent-progress">25%</span> / 100%</h2>
                         </div>                            
                     </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup" id="popupUpdate">
+            <div class="popupUpdate-content">
+                <a href="#">
+                    <div class="d-flex align-center flex-end">
+                        <span class="material-symbols-outlined" id="close-icon">
+                            close
+                        </span>
+                    </div>
+                </a>
+
+                <h2>Update Your Event Schedule Here !</h2>
+                <hr>
+
+                <div class="profile-desc-popUp">
+                    <label for="">Event Name:</label>
+                    <br>
+                    <input type="text" name="" id="" value="Girl's Packet" disabled>
+        
+                    <br>
+                    <br>
+                    
+                    <label for="">Schedule Title:</label>
+                    <br>
+                    <input type="text" name="" id="" value="Offline Meeting" disabled>
+        
+                    <br>
+                    <br>
+        
+                    <label for="">What you want to update?</label>
+                    <br>
+                    <textarea name="" id="" disabled>I want to change this schedule from Tuesday to Thursday</textarea>
+        
+                    <br>
+                    <br>
+
+                    <button class="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popupReport">
+            <div class="popupReport-content">
+                <a href="#">
+                    <div class="d-flex align-center flex-end">
+                        <span class="material-symbols-outlined" id="close-icon">
+                            close
+                        </span>
+                    </div>
+                </a>
+
+                <h2>Report Your Event Schedule Here !</h2>
+                <hr>
+
+                <div class="profile-desc-popUp">
+                    <label for="">Event Name:</label>
+                    <br>
+                    <input type="text" name="" id="" value="A Packet" disabled>
+        
+                    <br>
+                    <br>
+
+                    <label for="">What you want to report?</label>
+                    <br>
+                    <textarea name="" id="" disabled>Yesterday, the vendor arrived late so I waited a long time</textarea>
+        
+                    <br>
+                    <br>
+
+                    <button class="submit">Submit</button>
                 </div>
             </div>
         </div>

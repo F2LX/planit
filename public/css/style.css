@@ -20,8 +20,33 @@ body {
     background-color: #5E7153;
     color: #FCFCE4;
     padding: 10px;
-    width: 30%;
+    width: 20%;
 }
+
+.menu-nav li {
+    height: 50px;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+
+}
+
+.menu-nav li:hover {
+    transition: 0.3s ease;
+    border-radius: 10px;
+    background: #839678;
+}
+
+.menu-nav li span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.menu-nav li {
+    padding: 10px 12px;
+    border-bottom: 1px solid grey;
+}
+
 .menu > h2,ul > li {
     padding: 0 20px;
 }
@@ -325,6 +350,38 @@ div.content {
     box-sizing: border-box;
 }
 
+.profile-desc-popUp {
+    width: 70%;
+    padding-left: 15px;
+}
+
+.profile-desc-popUp > label {
+    font-weight: bold;
+    font-size: small;
+    color:#5F6F52;
+    opacity: 0.6;
+}
+
+.profile-desc-popUp > input {
+    width: 560px;
+    padding: 7px 12px;
+    border: none;
+    border-bottom: 1px solid;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.profile-desc-popUp > textarea {
+    font-family: "Open Sans", sans-serif;
+    width: 560px;
+    height: 150px;
+    padding: 7px 12px;
+    border: none;
+    border-bottom: 1px solid;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
 .ml-5{
     margin-left: 20px;
 }
@@ -597,6 +654,7 @@ tr:hover{
     border-radius: 7px;
     transition: 0.3s ease;
     font-size: small;
+    margin-right: 10px;
 }
 
 .report{
@@ -611,6 +669,7 @@ tr:hover{
     border-radius: 7px;
     transition: 0.3s ease;
     font-size: small;
+    margin-right: 10px;
 }
 
 .view:hover, .update:hover, .report:hover{
@@ -632,6 +691,25 @@ tr:hover{
 }
 
 .add-order:hover{
+    border: 3px solid #5F6F52;
+    background-color: white;
+    color: #5F6F52;
+}
+
+.submit{
+    background-color: #5F6F52;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+    border: 3px solid #5F6F52;
+    transition: 0.3s ease;
+}
+
+.submit:hover{
     border: 3px solid #5F6F52;
     background-color: white;
     color: #5F6F52;
@@ -1178,7 +1256,29 @@ tr:hover{
     transition: all .5s .1s;
 }
 
+.popupSuccess-content{
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0, .2);
+    padding: 20px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(.25);
+    opacity: 0;
+
+    transition: all .5s .1s;
+}
+
 #popup:target{
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s .1s;
+}
+
+#popupSuccess:target{
     opacity: 1;
     visibility: visible;
     transition: all .5s .1s;
@@ -1188,6 +1288,68 @@ tr:hover{
     opacity: 1;
     transform: translate(-50%, 50%) scale(1);
     transition: all .5s .1s;
+}
+
+#popupSuccess:target .popupSuccess-content{
+    opacity: 1;
+    transform: translate(-50%, 50%) scale(1);
+    transition: all .5s .1s;
+}
+
+.popupUpdate-content{
+    width: 40%;
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0, .2);
+    padding: 20px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: -24%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(.25);
+    opacity: 0;
+
+    transition: all .5s .1s;
+}
+
+#popupUpdate:target{
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s .1s;
+}
+
+#popupUpdate:target .popupUpdate-content{
+    opacity: 1;
+    transform: translate(-50%, 50%) scale(1);
+    transition: all .5s .1s;
+}
+
+/* popup report */
+.popupReport-content{
+    width: 40%;
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0, .2);
+    padding: 20px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(.25);
+    opacity: 0;
+
+    transition: all .5s .1s;
+}
+
+#popupReport:target{
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s .1s;
+}
+
+#popupReport:target .popupReport-content{
+    opacity: 1;
+    transform: translate(-50%, 50%) scale(1);
 }
 
 #close-icon{

@@ -16,9 +16,9 @@
                 <form class=" d-flex flex-direction-column" action="" method="post">
                     @csrf
                     <label for="">Email:</label>
-                    <input class="form-text" type="email" name="" id="" placeholder="Enter your email here...">
+                    <input class="form-text" type="email" name="" id="" placeholder="Enter your email here..." required>
                     <label for="">Password:</label>
-                    <input class="form-text" type="password" name="" id="" placeholder="Enter your password here...">
+                    <input class="form-text" type="password" name="" id="" placeholder="Enter your password here..." required>
                     <button class="loginbtn" type="submit">Register</button>
                 </form>
             </div>

@@ -328,7 +328,7 @@
                     <td>$900</td>
                     <td>
                         <div class="d-flex button-action">
-                            <button class="view">View</button>
+                            <a href="#popup" class="view">View</a>
                             <button class="ml-3 update">Update</button>
                             <button class="ml-3 report">Report</button>
                         </div>
@@ -340,7 +340,7 @@
                     <td>$450</td>
                     <td>
                         <div class="d-flex button-action">
-                            <button class="view">View</button>
+                            <a href="#popup" class="view">View</a>
                             <button class="ml-3 update">Update</button>
                             <button class="ml-3 report">Report</button>
                         </div>
@@ -353,7 +353,7 @@
                     <td>
                         <div class="d-flex button-action">
                             <a href="#popup" class="view">View</a>
-                            <a href="#popup2" class="update">Update</a>
+                            <a href="#popupUpdate" class="update">Update</a>
                             <a href="#popup3" class="report">Report</a>
                         </div>
                     </td>
@@ -361,6 +361,12 @@
             </table>
         </div>
         <button class="add-order">Add New Order</button>
+
+        {{-- <div class="popupUpdate" id="popupUpdate">
+            <div class="popupUpdate-content">
+                <p>P</p>
+            </div>
+        </div> --}}
 
         <div class="popup" id="popup">
             <div class="popup-content">
@@ -456,6 +462,46 @@
                             <h2><span class="percent-progress">25%</span> / 100%</h2>
                         </div>                            
                     </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup" id="popupUpdate">
+            <div class="popupUpdate-content">
+                <a href="#">
+                    <div class="d-flex align-center flex-end">
+                        <span class="material-symbols-outlined" id="close-icon">
+                            close
+                        </span>
+                    </div>
+                </a>
+
+                <h2>Update Your Event Schedule Here !</h2>
+                <hr>
+
+                <div class="profile-desc-popUp">
+                    <label for="">Event Name:</label>
+                    <br>
+                    <input type="text" name="" id="" value="Taylor Series" disabled>
+        
+                    <br>
+                    <br>
+                    
+                    <label for="">Schedule Title:</label>
+                    <br>
+                    <input type="text" name="" id="" value="Summer Event" disabled>
+        
+                    <br>
+                    <br>
+        
+                    <label for="">What you want to update?</label>
+                    <br>
+                    <input type="text" name="" id="" value="0822-5678-1234" disabled>
+        
+                    <br>
+                    <br>
+
+                    {{-- buat tombol send req --}}
                 </div>
             </div>
         </div>

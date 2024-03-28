@@ -14,6 +14,16 @@
         </div>
         <hr>
 
+        <div class="d-flex align-center justify-content-between" id="searchbar-list">
+            <input type="text" id="message-input" placeholder="Search">
+            <button class="button-search">
+                <span class="material-symbols-outlined" id="search-ikon">
+                    search
+                </span>    
+            </button>
+            
+        </div>
+
         <div class="table-container">
             <table>
                 <tr>
@@ -364,12 +374,21 @@
 
         <div class="popup" id="popupSuccess">
             <div class="popupSuccess-content">
-                <span class="material-symbols-outlined">
-                    task_alt
-                </span>
-                <h3>Success</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Okay</button>
+                <a href="#">
+                    <div class="d-flex align-center flex-end">
+                        <span class="material-symbols-outlined" id="close-icon">
+                            close
+                        </span>
+                    </div>
+                </a>
+                <div class="d-flex flex-direction-column justify-content-center align-center">
+                    <span class="material-symbols-outlined" id="success-icon">
+                        task_alt
+                    </span>
+                    <h3 class="success-text">Success</h3>
+                    <p class="success-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="okay-button">Okay</a>
+                </div>
             </div>
         </div>
 

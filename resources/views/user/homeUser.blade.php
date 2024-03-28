@@ -19,8 +19,8 @@
             <div>
                 <h3 class="e-wallet-tulisan">McDidi's E-Wallet</h3>
                 <div class="d-flex wallet-tab align-center w-100 mt-0">
-                    <span class="material-symbols-outlined wallet-ikon">
-                        wallet
+                    <span class="material-symbols-outlined">
+                        account_balance_wallet
                     </span>
                     <h3 class="wallet-user">$999,999,999,999,999.00</h3>
                 </div>

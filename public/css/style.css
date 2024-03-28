@@ -8,6 +8,12 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
+
+input[type="text"] {
+    border: none;
+    outline: none;
+}
+
 .main-nav {
     width: 100%;
     height: 90px;
@@ -167,6 +173,7 @@ a {
     border-radius: 30px 0 0 30px;
     box-sizing: border-box;
 }
+
 .btn-search {
     border: 0;
     background-color: #5E7153;
@@ -589,7 +596,7 @@ div.content {
 }
 
 .table-container{
-    height: 500px;
+    height: 450px;
     overflow: auto;
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -684,10 +691,11 @@ tr:hover{
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
     border: 3px solid #5F6F52;
     transition: 0.3s ease;
+    font-size: small;
 }
 
 .add-order:hover{
@@ -841,7 +849,7 @@ tr:hover{
     padding: 7px 8px;
     position: absolute;
     bottom: 3%;
-    width: 44%;
+    width: 48.2%;
 }
 
 .background-input2{
@@ -850,7 +858,7 @@ tr:hover{
     padding: 7px 8px;
     position: absolute;
     bottom: 3%;
-    width: 65.1%;
+    width: 71.1%;
 }
 
 .profile {
@@ -948,6 +956,20 @@ tr:hover{
 }
 
 #searchbar-chat:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+}
+
+#searchbar-list{
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    transition: 0.2s ease;
+    border: 1px solid;
+}
+
+#searchbar-list:hover{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
 }
 
@@ -1257,14 +1279,14 @@ tr:hover{
 }
 
 .popupSuccess-content{
-    width: 30%;
+    width: 20%;
     background-color: #fff;
     box-shadow: 0 20px 40px rgba(0,0,0, .2);
     padding: 20px;
     border-radius: 20px;
 
     position: absolute;
-    top: 22%;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, 50%) scale(.25);
     opacity: 0;
@@ -1354,6 +1376,29 @@ tr:hover{
 
 #close-icon{
     font-size: 30px;
+}
+
+#success-icon{
+    color: limegreen;
+    font-size: 100px;
+}
+
+.success-text{
+    color: limegreen;
+}
+
+.success-desc{
+    font-size: small;
+    margin-top: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.okay-button{
+    background-color: limegreen;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
 }
 
 /* .modal {

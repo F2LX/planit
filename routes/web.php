@@ -41,10 +41,6 @@ Route::get('/viewOrderSummaryUser', function() {
 //     return view('home');
 // });
 
-
-
-Route::get('/dashboard', [AdminController::class, 'index']);
-
 Route::get('/', [AuthController::class, 'index']);
 
 Route::get('/login', [AuthController::class, 'login']);

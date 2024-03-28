@@ -22,12 +22,15 @@ input[type="text"] {
 }
 
 .menu {
+    position: fixed;
     height: 100%;
     background-color: #5E7153;
     color: #FCFCE4;
     padding: 10px;
-    width: 20%;
-}
+    /* Width declared on animation.css */
+}   
+
+/* Menu Padding handled by javascript and animation.css */
 
 .menu-nav li {
     height: 50px;
@@ -1549,3 +1552,12 @@ tr:hover{
     text-decoration: none;
     cursor: pointer;
   } */
+
+
+  /* Lifehack: Responsive WIP */
+
+  @media only screen and (max-width: 500px) {
+    .content .d-flex {
+        display: block !important;
+    }
+  }

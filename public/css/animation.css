@@ -6,6 +6,59 @@ div.menu {
     animation: right-pop 1.9s;
 }
 
+.menu {
+    width: 20%; /* Atur lebar sidebar sesuai kebutuhan Anda */
+    transition: width 0.3s ease-in-out; /* Animasi transisi lebar sidebar */
+}
+
+.menu-padding {
+    width: 30%;
+    transition: width 0.3s ease-in-out;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.menu-padding-minimize {
+    width: 7% !important; /* Lebar minimal sidebar saat menyembunyikan */
+}
+
+.minimize {
+    width: 5% !important; /* Lebar minimal sidebar saat menyembunyikan */
+    .nav-text {
+        display: none;
+    };
+
+    .menu-nav li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-nav li span{
+        margin: 0 !important;
+        text-align: center !important;
+    }
+}
+.animate-right {
+    animation: right-pop 1s ease-in-out;
+}
+
+.animate-left {
+    animation: left-pop 1s ease-in-out;
+}
+
+@keyframes left-pop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
 @keyframes right-pop {
     0% {
         transform: translateX(-10%);
@@ -44,4 +97,14 @@ div.menu {
         transform: translateY(0);
     }
 
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

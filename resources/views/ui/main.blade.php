@@ -10,8 +10,7 @@
 
     {{-- Import Preloader CSS --}}
     <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
-
-    <script src="{{ asset("js/preloader.js") }}"></script>    
+   
 </head>
 <body>
     <nav class="d-flex main-nav justify-space-between align-center">
@@ -31,5 +30,7 @@
     <div>
         @yield("content")
     </div>
+
+    <script src="{{ asset("js/preloader.js") }}"></script> 
 </body>
 </html>

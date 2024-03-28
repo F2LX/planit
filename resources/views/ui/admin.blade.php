@@ -18,8 +18,6 @@
 
     {{-- Import Preloader CSS --}}
     <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
-
-    <script src="{{ asset("js/preloader.js") }}"></script>
     
     <title>Plan It - Admin Area</title>
 </head>
@@ -29,11 +27,36 @@
         <div class="menu">
             <h2>Admin Area</h2>
             <ul class="menu-nav">
-                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">home</span>Home</a></li>
-                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">description</span>Order Summary</a></li>
-                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">ads_click</span>Advertisement</a></li>
-                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">account_balance_wallet</span>Wallet</a></li>
-                <li><a href="" class="d-flex align-center flex-direction-row"><span class="material-symbols-outlined">contact_support</span>Contact Support</a></li>
+                <li>
+                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                        <span class="material-symbols-outlined">description</span>
+                        <span class="nav-text">Order Summary</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                        <span class="material-symbols-outlined">ads_click</span>
+                        <span class="nav-text">Advertisement</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                        <span class="material-symbols-outlined">account_balance_wallet</span>
+                        <span class="nav-text">Wallet</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                        <span class="material-symbols-outlined">contact_support</span>
+                        <span class="nav-text">Contact Support</span>
+                    </a>
+                </li>
             </ul>
         </div>
         @include('ui.preloader')
@@ -42,5 +65,6 @@
         </div>
     </div>
     
+    <script src="{{ asset("js/preloader.js") }}"></script> 
 </body>
 </html>

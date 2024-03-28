@@ -10,5 +10,5 @@ window.addEventListener('load', function(){
       preloader.addEventListener('animationend', function() {
         preloader.style.display = 'none';
       });
-    }, 500); // 1000 milliseconds = 1 second
+    }, 400); // 1000 milliseconds = 1 second
   });

@@ -1,9 +1,9 @@
 div.content {
-    animation: fade 1.2s;
+    animation: fade 1.9s;
 }
 
 div.menu {
-    animation: right-pop 1.2s;
+    animation: right-pop 1.9s;
 }
 
 @keyframes right-pop {

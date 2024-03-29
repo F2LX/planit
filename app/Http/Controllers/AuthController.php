@@ -32,7 +32,11 @@ class AuthController extends Controller
         'password' => 'required'
     ]);
     if (auth()->attempt($request->only('email', 'password'))) {
-        return redirect()->intended('/dashboard');
+
+        if (auth()->user()->role==="user") {
+            return redirect()->intended('/user');
+        }
+        
 
         // TO BE ADDED: Middleware validation if auth()->user()->role === 'admin','user','vendor'
     } else {

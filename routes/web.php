@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 
 // TO BE ADDED: Middleware Grouping
 
@@ -12,30 +13,16 @@ Route::get('/vDetails', function () {
     return view('vendor.vendorDetails');
 });
 
-Route::get('/profileUser', function() {
-    return view('user.profileUser');
-});
-Route::get('/home', function() {
-    return view('user.home');
-});
-Route::get('/orderSummaryUser', function() {
-    return view('user.orderSummaryUser');
-});
-Route::get('/contactSupportUser', function() {
-    return view('user.contactSupportUser');
-});
-Route::get('/orderSummaryView', function() {
-    return view('user.orderSummaryView');
-});
-Route::get('/chatUser', function() {
-    return view('user.chatUser');
-});
-Route::get('/homeUser', function() {
-    return view('user.homeUser');
-});
-Route::get('/viewOrderSummaryUser', function() {
-    return view('user.viewOrderSummaryUser');
-});
+
+Route::get('/user', [UserController::class, 'index']);
+Route::get('/user/profile', [UserController::class, 'profile']);
+Route::get('/user/order', [UserController::class, 'ordersum']);
+Route::get('/user/profile', [UserController::class, 'profile']);
+Route::get('/user/support', [UserController::class, 'contactsupport']);
+
+
+
+
 
 // Route::get('/contoh2', function() {
 //     return view('home');

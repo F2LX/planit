@@ -29,25 +29,25 @@
             <h2>User Area</h2>
             <ul class="menu-nav">
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                    <a href="/user" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">home</span>
                         <span class="nav-text">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                    <a href="/user/order" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">description</span>
                         <span class="nav-text">Order Summary</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                    <a href="/user/profile" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">account_balance_wallet</span>
                         <span class="nav-text">Wallet</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                    <a href="/user/support" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">contact_support</span>
                         <span class="nav-text">Contact Support</span>
                     </a>

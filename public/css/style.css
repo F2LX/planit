@@ -1560,4 +1560,8 @@ tr:hover{
     .content .d-flex {
         display: block !important;
     }
+
+    .main-content-wrap .d-flex {
+        display: block !important;
+    }
   }

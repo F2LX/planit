@@ -13,12 +13,12 @@
         <div class="outerpanel">
             <div class="loginpanel register">
                 <h2 id="login-text">Register</h2>
-                <form class=" d-flex flex-direction-column" action="" method="post">
+                <form class=" d-flex flex-direction-column" action="/register/create" method="post">
                     @csrf
                     <label for="">Email:</label>
-                    <input class="form-text" type="email" name="" id="" placeholder="Enter your email here..." required>
+                    <input class="form-text" type="email" name="email" id="" placeholder="Enter your email here..." required>
                     <label for="">Password:</label>
-                    <input class="form-text" type="password" name="" id="" placeholder="Enter your password here..." required>
+                    <input class="form-text" type="password" name="password" id="" placeholder="Enter your password here..." required>
                     <button class="loginbtn" type="submit">Register</button>
                 </form>
             </div>

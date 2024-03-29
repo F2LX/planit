@@ -27,7 +27,7 @@
             </ul>
     </nav>
     @include('ui.preloader')
-    <div>
+    <div class="main-content-wrap">
         @yield("content")
     </div>
 

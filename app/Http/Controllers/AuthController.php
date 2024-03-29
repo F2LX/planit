@@ -45,18 +45,22 @@ class AuthController extends Controller
      */
     public function store(Request $request)
     {
-        $data=$request->validate([
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
+        $rules =
+            [
+                'name' => 'required',
+                'phonenumber' => 'required',
+                'email' => 'required|email',
+                'password' => 'required'
+            ];
+        $data=$request->validate($rules);
+        
+        // Set role to User by Default
+        $data['role'] = "user";
 
         // Encrypt using BCRYPT
         $data['password']=bcrypt($data['password']);
+        User::create($data); 
         
-        User::create($data);    
-        
-        
-
         return redirect()->intended("/login");
     }
 }

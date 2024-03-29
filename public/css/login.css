@@ -1,6 +1,6 @@
 .outerpanel {
     width: 600px;
-    height: 350px;
+    height: fit-content;
     background-color: #BA9470;
     border-radius: 30px;
     box-sizing: border-box;

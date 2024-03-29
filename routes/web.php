@@ -47,8 +47,8 @@ Route::get('/login', [AuthController::class, 'login']);
 
 Route::get('/register', [AuthController::class, 'register']);
 
-Route::post('/register/post', [AuthController::class, 'store']);
-Route::post('/login/post', [AuthController::class, 'validate']);
+Route::post('/register/create', [AuthController::class, 'store']);
+Route::post('/login/validate', [AuthController::class, 'validate']);
 
 
 // TESTING PURPOSES

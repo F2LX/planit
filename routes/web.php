@@ -13,6 +13,12 @@ Route::get('/vDetails', function () {
     return view('vendor.vendorDetails');
 });
 
+// WIP Chat
+
+Route::get('/user/chat', function () {
+    return view('user.chat');
+});
+
 
 Route::get('/user', [UserController::class, 'index']);
 Route::get('/user/profile', [UserController::class, 'profile']);

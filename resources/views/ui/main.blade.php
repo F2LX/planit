@@ -10,6 +10,9 @@
 
     {{-- Import Preloader CSS --}}
     <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
+
+    {{-- Import Mobile CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
    
 </head>
 <body>

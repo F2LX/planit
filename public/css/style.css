@@ -1552,16 +1552,3 @@ tr:hover{
     text-decoration: none;
     cursor: pointer;
   } */
-
-
-  /* Lifehack: Responsive WIP */
-
-  @media only screen and (max-width: 500px) {
-    .content .d-flex {
-        display: block !important;
-    }
-
-    .main-content-wrap .d-flex {
-        display: block !important;
-    }
-  }

@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Vendor extends Model
+class DateScheduleEvent extends Model
 {
     use HasFactory;
-
     protected $fillable = [
-        'userid',
-        'name',
-        'description',
-        'address',
-        'phone'
+        'idevent',
+        'idvendor',
+        'iduser',
+        'date',
+        'schedule_title',
+        'isDone'
     ];
 }

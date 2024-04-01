@@ -5,13 +5,16 @@
     <div class="w-100 d-flex justify-content-center">
 
     </div>
-    <div class="wrapper-main text-center d-flex align-center justify-content-center flex-direction-column">
+    <div class="wrapper-main d-flex align-center justify-content-center flex-direction-column">
         <div class="section-search">
-            <h2 id="main">Plan Your Event Now!</h2>
+            <h1 class="big-text-plan">PLAN</h1>
+            <h2 id="main" class="small-text-event">YOUR EVENT NOW</h2>
             <form class="searchbar d-flex justify-content-center " action="" method="get">
                 @csrf
                 <input type="text" name="search" id="search" placeholder="Event organizer, birthday party, wedding organizer">
-                <button class="btn-search" type="submit">Search Icon Here</button>
+                <button class="btn-search" type="submit"><span class="material-symbols-outlined">
+                    search
+                    </span></button>
             </form>
         </div>
         

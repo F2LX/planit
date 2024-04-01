@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ asset("css/animation.css") }}">
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
     <link rel="stylesheet" href="{{ asset("css/login.css") }}">
 </head>
@@ -23,7 +24,7 @@
                 </form>
             </div>
         </div>
-        <p id="regtext">Don't have an account? <a href=""><span id="register">Register Now!</span></a></p>
+        <p id="regtext">Don't have an account? <a href="/register"><span id="register">Register Now!</span></a></p>
     </div>
 </body>
 </html>

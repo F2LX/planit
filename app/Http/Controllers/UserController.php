@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -16,7 +17,8 @@ class UserController extends Controller
 
     public function profile()
     {
-        return view('user.profile');
+        $profile=User::find(auth()->user()->id);
+        return view('user.profile',compact('profile'));
     }
 
 
@@ -35,7 +37,17 @@ class UserController extends Controller
         return view('user.contactsupport');
     }
 
+    public function updateprofile(Request $request) {
+        $data=$request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'address' => 'required',
+            'phonenumber' => 'required'
+        ]);
 
+        $userid=User::find(auth()->user()->id);
+        
+    }
     /**
      * Show the form for creating a new resource.
      */

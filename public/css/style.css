@@ -14,7 +14,19 @@ input[type="text"] {
     outline: none;
 }
 
+input[type="email"] {
+    border: none;
+    outline: none;
+}
+input[type="password"] {
+    border: none;
+    outline: none;
+}
+
+
 .main-nav {
+    position: fixed;
+    z-index: 100;
     width: 100%;
     height: 90px;
     background-color: #5E7153;
@@ -54,6 +66,11 @@ input[type="text"] {
 .menu-nav li {
     padding: 10px 12px;
     border-bottom: 1px solid grey;
+}
+
+.active {
+    background-color: #839678;
+    border-radius: 10px;
 }
 
 .menu > h2,ul > li {
@@ -97,20 +114,22 @@ a {
 }
 
 .wrapper-main {
+    width: 100%;
     height: fit-content;
+    padding-top: -220px;
     position: relative;
     z-index: 1;
     padding: 50px 0;
-    width: 100%;
     background: url('../img/homebg-edit.png') no-repeat;
     background-size: 100%;
 }
 
-.wrapper-main {
-    z-index: 3;
-}
 .vendor-top-img {
+    top: 10%;
     position: absolute;
+    left: 10vw;
+    margin-top: 150px;
+    width: 41%;
     z-index: 2;
     top: 0;
 }
@@ -197,8 +216,25 @@ a {
 .flex-direction-column {
     flex-direction: column;
 }
-h2#main {
-    font-size: 60px;
+
+.big-text-plan {
+    position: relative;
+    font-size: 90px;
+    background:linear-gradient(270deg,#A9B489,#5E7153);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.small-text-event {
+    margin-top: -40px;
+    margin-right: 5px;
+    font-size: 45px;
+    background:linear-gradient(270deg,#A9B489,#5E7153);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    text-align: right;
 }
 .card {
     background-color: #5E7153;
@@ -217,6 +253,10 @@ h2#main {
 }
 .section-search {
     padding: 200px;
+}
+
+.section-top-vendor {
+    margin-top: 450px;
 }
 
 .form-text {
@@ -274,17 +314,17 @@ button {
 }
 
 .btn-green{
-    background-color:limegreen;
+    background-color:#5E7153;
     color: white;
-    border: 3px solid limegreen;
+    border: 3px solid #5E7153;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
     transition: 0.3s ease;
 }
 
 .btn-green:hover{
-    border: 3px solid limegreen;
+    border: 3px solid #5E7153;
     background-color: white;
-    color: limegreen;
+    color: #5E7153;
 }
 
 .btn-red{
@@ -421,7 +461,7 @@ div.content {
 }
 
 .on-going-box{
-    background-color: limegreen;
+    background-color: #5E7153;
     border-radius: 20px;
     padding: 10px;
     padding-left: 20px;
@@ -516,7 +556,7 @@ div.content {
 }
 
 .present > .tanggal-pelaksanaan{
-    background-color: limegreen;
+    background-color: #5E7153;
 }
 .present > .tanggal-pelaksanaan > .tanggal{
     color: white;
@@ -525,7 +565,7 @@ div.content {
     color: white;
 }
 .present > .second > .schedule-name{
-    color: limegreen;
+    color: #5E7153;
 }
 .present > .second > .notes{
     color: black;
@@ -565,7 +605,7 @@ div.content {
 }
 
 .status-schedule-done{
-    background-color: limegreen;
+    background-color: #5E7153;
     padding: 10px;
     color: white;
     border-radius: 10px;
@@ -642,7 +682,7 @@ tr:hover{
 }
 
 .view{
-    background-color: limegreen;
+    background-color: #5E7153;
     color: white;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
@@ -944,7 +984,7 @@ tr:hover{
 }
 
 .available-status{
-    background-color: limegreen;
+    background-color: #5E7153;
     color: white;
     padding: 5px 10px;
     border-radius: 20px;
@@ -1172,7 +1212,7 @@ tr:hover{
     height: 100%;
     border-radius: 50%;
     clip: rect(0, 100px, 100px, 0);
-    background-color: limegreen;
+    background-color: #5E7153;
 }
 
 .icon {
@@ -1203,20 +1243,20 @@ tr:hover{
     transition: 0.3s ease;
 }
 .percent-progress:hover{
-    color: limegreen;
+    color: #5E7153;
 }
 
 .home-subjudul{
     margin-top: 10px;
     margin-bottom: 0;
-    color: limegreen;
+    color: #5E7153;
 }
 
 .on-going-tulisan{
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1em;
-    color: limegreen;
+    color: #5E7153;
     text-align: center;
 }
 
@@ -1230,7 +1270,7 @@ tr:hover{
 }
 
 .contact-vendor:hover{
-    color: limegreen;
+    color: #5E7153;
 }
 
 #star-ikon{
@@ -1555,16 +1595,3 @@ tr:hover{
     text-decoration: none;
     cursor: pointer;
   } */
-
-
-  /* Lifehack: Responsive WIP */
-
-  @media only screen and (max-width: 500px) {
-    .content .d-flex {
-        display: block !important;
-    }
-
-    .main-content-wrap .d-flex {
-        display: block !important;
-    }
-  }

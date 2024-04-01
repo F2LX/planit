@@ -44,7 +44,7 @@
             </div>    
             <button class="contact-vendor">Contact Complain</button>
         </div>
-        <h2 class="text-center">On Going Order</h2>
+        <h2 class="text-center">Upcoming Events</h2>
         <div class="d-flex w-100">
             <div class="w-100">
                 <div class="carousel-container">

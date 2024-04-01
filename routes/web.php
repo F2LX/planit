@@ -43,7 +43,7 @@ Route::get('/admin/profile', function () {
 // dummy
     $profile=auth()->user();
     return view('admin.profile',compact('profile'));
-});
+})->middleware('admin');
 
 Route::get('/admin/profile', function () {
     // dummy

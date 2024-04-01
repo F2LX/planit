@@ -5,20 +5,28 @@
     <div class="w-100 d-flex flex-direction-column">
         <h2>Post New ads</h2>
         <form action="">
+            <p>Title:</p>
+            <div class="post-title">
+                <input placeholder="Input title here" type="text" name="" id="">
+            </div>
+    
+            <p>Description:</p>
+            <div class="post-desc">
+                <textarea name="" id="" cols="20" rows="10"></textarea>
+            </div>
+            {{-- <br> --}}
+            
 
-            <div class="d-flex">
-                <p>Title:</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-    
-            <div class="d-flex">
-                <p>Description:</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-    
-            <div class="d-flex align-center">
-                <p>Upload Images:</p>
-                <input type="file" name="" id="">
+            <p>Upload image:</p>
+            <div class="drop-box">
+                    <label for="input-file" id="drop-area">
+                        <input type="file" accept="image/*" id="input-file" hidden>
+                        <div id="img-view">
+                            <img src="{{asset("img/UploadIcon.png")}}" alt="">
+                            <p>Drag and drop or click here<br>to upload image</p>
+                            <span>Upload any image from desktop</span>
+                        </div>
+                    </label>
             </div>
         </form>
     </div>

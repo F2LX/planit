@@ -13,6 +13,10 @@ Route::get('/ads', function () {
     return view('vendor.advertisement');
 });
 
+Route::get('/vHome', function () {
+    return view('vendor.homeVendor');
+});
+
 Route::get('/vDetails', function () {
     return view('vendor.vendorDetails');
 });

@@ -20,9 +20,9 @@
                     <label for="phonenumber">Phone Number:</label>
                     {{-- Must be validated at the front end --}}
                     <input class="form-text" type="text" name="phonenumber" id="" placeholder="Enter your phonenumber here" required>
-                    <label for="">Email:</label>
+                    <label for="email">Email:</label>
                     <input class="form-text" type="email" name="email" id="" placeholder="Enter your email here..." required>
-                    <label for="">Password:</label>
+                    <label for="password">Password:</label>
                     <input class="form-text" type="password" name="password" id="password" placeholder="Enter your password here..." required>
                     <button class="loginbtn" type="submit">Register</button>
                 </form>

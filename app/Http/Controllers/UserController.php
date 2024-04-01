@@ -37,7 +37,17 @@ class UserController extends Controller
         return view('user.contactsupport');
     }
 
+    public function updateprofile(Request $request) {
+        $data=$request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'address' => 'required',
+            'phonenumber' => 'required'
+        ]);
 
+        $userid=User::find(auth()->user()->id);
+        
+    }
     /**
      * Show the form for creating a new resource.
      */

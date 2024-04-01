@@ -21,9 +21,18 @@
                 <li>Home</li>
                 <li>Products</li>
                 <li>About Us</li>
+
+                @if(!auth()->user())
                 <li><a href="" class="btn btn-nav d-flex align-center"><span class="material-symbols-outlined">
                     account_circle
                     </span><span class="ml-2">Login</span></a></li>
+                @else
+                    
+                <li><a href="/user/profile" class="btn btn-nav d-flex align-center"><span class="material-symbols-outlined">
+                    account_circle
+                    </span><span class="ml-2">Profile</span></a></li>
+
+                @endif
             </ul>
     </nav>
     @include('ui.preloader')

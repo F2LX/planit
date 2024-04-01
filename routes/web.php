@@ -21,7 +21,7 @@ Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/support', [UserController::class, 'contactsupport']);
 
 
-
+Route::post('/user/profile/post', [UserController::class, 'updateprofile']);
 
 
 // Route::get('/contoh2', function() {

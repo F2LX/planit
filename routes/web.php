@@ -9,6 +9,10 @@ use App\Http\Controllers\UserController;
 
 // TO BE ADDED: Middleware Grouping
 
+Route::get('/ads', function () {
+    return view('vendor.advertisement');
+});
+
 Route::get('/vDetails', function () {
     return view('vendor.vendorDetails');
 });

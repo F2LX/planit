@@ -25,6 +25,12 @@
                     <input class="form-text" type="email" name="email" id="" placeholder="Enter your email here..." required>
                     <label for="password">Password:</label>
                     <input class="form-text" type="password" name="password" id="password" placeholder="Enter your password here..." required>
+                    <label for="role">Register As:</label>
+                    <select name="role" id="role" class="form-text">
+                        <option value="user">Buyer</option>
+                        <option value="vendor">Vendor</option>
+                        
+                    </select>
                     <button class="loginbtn" type="submit">Register</button>
                 </form>
             </div>

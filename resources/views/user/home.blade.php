@@ -17,7 +17,7 @@
 
         <div class="d-flex align-center justify-content-between">
             <div>
-                <h3 class="e-wallet-tulisan">McDidi's E-Wallet</h3>
+                <h3 class="e-wallet-tulisan">My Wallet</h3>
                 <div class="d-flex wallet-tab align-center w-100 mt-0">
                     <span class="material-symbols-outlined">
                         account_balance_wallet

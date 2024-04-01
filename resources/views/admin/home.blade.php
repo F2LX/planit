@@ -1,4 +1,4 @@
-@extends('ui.user')
+@extends('ui.admin')
 
 @section('content')
     <div class="p-5">
@@ -17,7 +17,7 @@
 
         <div class="d-flex align-center justify-content-between">
             <div>
-                <h3 class="e-wallet-tulisan">My Wallet</h3>
+                <h3 class="e-wallet-tulisan">Total Balance:</h3>
                 <div class="d-flex wallet-tab align-center w-100 mt-0">
                     <span class="material-symbols-outlined">
                         account_balance_wallet
@@ -33,20 +33,20 @@
             </div>
         </div>
 
-        <h3 class="on-going-tulisan">ON-GOING</h3>
+        <h3 class="on-going-tulisan">Latest Complain</h3>
 
         <div class="d-flex align-center justify-content-between on-going-box w-100">
             <div class="d-flex clock-tab align-center">
                 <span class="material-symbols-outlined">
                     alarm_on
                 </span> 
-                <h3 class="ml-5 on-going-text">First Online Meeting | 08.00 WIB </h3>
+                <h3 class="ml-5 on-going-text">Taylor Series Vendor | User name here </h3>
             </div>    
-            <button class="contact-vendor">Contact Vendor Now</button>
+            <button class="contact-vendor">Contact Complain</button>
         </div>
-
+        <h2 class="text-center">Upcoming Events</h2>
         <div class="d-flex w-100">
-            <div class="w-70">
+            <div class="w-100">
                 <div class="carousel-container">
                     <div class="carousel-item-wrapper">
                         <div class="d-flex carousel-item align-center past">
@@ -55,8 +55,8 @@
                                 <p class="bold bulan">JAN</p>
                             </div>
                             <div class="second">
-                                <p class="bold schedule-name">Schedule Name:</p>
-                                <p class="notes">Agreement and start scheduling</p>
+                                <p class="bold schedule-name">Event Name:</p>
+                                <p class="notes">JeTeLika Grand Prix</p>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                                 <p class="bold bulan">JANUARY</p>
                             </div>
                             <div class="second">
-                                <p class="bold schedule-name">Schedule Name:</p>
+                                <p class="bold schedule-name">Event Name:</p>
                                 <p class="notes">First Online Meeting</p>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                                 <p class="bold bulan">FEB</p>
                             </div>
                             <div class="second">
-                                <p class="bold schedule-name">Schedule Name:</p>
+                                <p class="bold schedule-name">Event Name:</p>
                                 <p class="notes">Go to Venue</p>
                             </div>
                         </div>
@@ -94,26 +94,12 @@
                                 <p class="bold bulan">MAR</p>
                             </div>
                             <div class="second">
-                                <p class="bold schedule-name">Schedule Name:</p>
+                                <p class="bold schedule-name">Event Name:</p>
                                 <p class="notes">Rehearsal</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="w-30">
-                <div class="d-flex flex-direction-column align-center justify-center">
-                    <h3 class="home-subjudul">PROGRESS</h3>
-                    <div class="progress-circle">
-                        <span class="progress"></span>
-                        <span class="icon material-symbols-outlined" id="icon">
-                            published_with_changes
-                        </span>
-                    </div>
-                    
-                    <h2><span class="percent-progress">25%</span> / 100%</h2>
-                </div>                            
             </div>
         </div>
     </div>

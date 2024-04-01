@@ -1597,3 +1597,18 @@ tr:hover{
     text-decoration: none;
     cursor: pointer;
   } */
+
+  .post-title{
+    background-color: #666;
+    height: 20px;
+    width: 80%;
+    
+  }
+
+  .post-desc{
+    background-color: #666;
+  }
+
+  .post-img{
+    background-color: #666;
+  }

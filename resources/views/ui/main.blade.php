@@ -21,12 +21,12 @@
                 <img src="{{ asset("img/logo.png") }}" alt="">
          </div>
             <ul class="d-inline text-right d-flex align-center">
-                <li>Home</li>
-                <li>Products</li>
-                <li>About Us</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about-us">About Us</a></li>
 
                 @if(!auth()->user())
-                <li><a href="" class="btn btn-nav d-flex align-center"><span class="material-symbols-outlined">
+                <li><a href="/login" class="btn btn-nav d-flex align-center"><span class="material-symbols-outlined">
                     account_circle
                     </span><span class="ml-2">Login</span></a></li>
                 @else

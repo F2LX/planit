@@ -15,7 +15,7 @@ class VendorMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (auth()->user()->role==='admin') {
+        if (auth()->user()->role==='vendor') {
             return $next($request);
         }
         return route('login');

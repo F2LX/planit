@@ -1631,7 +1631,6 @@ tr:hover{
     box-sizing: border-box;
 }
 
-
 .post-desc{
     display: flex;
     flex-direction: column;
@@ -1642,7 +1641,9 @@ tr:hover{
 .post-desc > textarea{
     resize: none;
     overflow: hidden;
-    width: 100%;
+    width: 98%;
+    padding: 10px;
+    border-radius: 10px;
     height: 150px;
     outline: none;
     border: none;
@@ -1663,21 +1664,6 @@ tr:hover{
 
 .margin-0{
     margin: 0px;
-}
-
-/* input[type="file"] {
-    width: 180px;
-    height: auto;
-    cursor: pointer;
-} */
-
-.upload-button {
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
 }
 
 .drop-box{

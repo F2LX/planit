@@ -14,19 +14,16 @@
             <div class="post-desc">
                 <textarea name="" id="" cols="20" rows="10"></textarea>
             </div>
-            {{-- <br> --}}
-            
 
             <p>Upload image:</p>
             <div class="drop-box">
-                    <label for="input-file" id="drop-area">
-                        <input type="file" accept="image/*" id="input-file" hidden>
-                        <div id="img-view">
-                            <img src="{{asset("img/UploadIcon.png")}}" alt="">
-                            <p>Drag and drop or click here<br>to upload image</p>
-                            <span>Upload any image from desktop</span>
-                        </div>
-                    </label>
+                <label for="input-file" id="drop-area">
+                    <input type="file" accept="image/*" id="input-file" hidden>
+                    <div id="img-view">
+                        <img src="{{asset("img/UploadIcon.png")}}" alt="">
+                        <p>Drag and drop or click here<br>to upload image</p>                            <span>Upload any image from desktop</span>
+                    </div>
+                </label>
             </div>
         </form>
     </div>

@@ -6,12 +6,17 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VendorController;
 
 // TO BE ADDED: Middleware Grouping
+
+Route::post('/vendor/ads/add', [VendorController::class, 'store']);
 
 Route::get('/ads', function () {
     return view('vendor.advertisement');
 });
+
+
 
 Route::get('/vHome', function () {
     return view('vendor.homeVendor');

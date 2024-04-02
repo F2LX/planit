@@ -62,6 +62,9 @@
         </div>
         @include('ui.preloader')
         <div class="content p-5">
+            <button class="btn btn-minimize" id="dashboardMinimize"><span class="material-symbols-outlined">
+                menu
+                </span></button>
             @yield('content')
         </div>
     </div>

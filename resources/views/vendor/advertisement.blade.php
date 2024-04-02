@@ -18,15 +18,6 @@
 
             <p>Upload image:</p>
             <div class="drop-box">
-<<<<<<< HEAD
-                <label for="input-file" id="drop-area">
-                    <input type="file" accept="image/*" id="input-file" hidden>
-                    <div id="img-view">
-                        <img src="{{asset("img/UploadIcon.png")}}" alt="">
-                        <p>Drag and drop or click here<br>to upload image</p>                            <span>Upload any image from desktop</span>
-                    </div>
-                </label>
-=======
                     <label for="input-file" id="drop-area">
                         <input type="file" name="image" accept="image/*" id="input-file" hidden>
                         <div id="img-view">
@@ -35,7 +26,6 @@
                             <span>Upload any image from desktop</span>
                         </div>
                     </label>
->>>>>>> 974be36db6718917f499b24424b93fff84752ff5
             </div>
     </div>
     <button type="submit">Submit</button>

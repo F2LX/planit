@@ -32,13 +32,18 @@ Route::get('/user/chat', function () {
     return view('user.chat');
 });
 
+//jess
+Route::get('/user/add-order', function () {
+    return view('user.order');
+});
+
 
 Route::get('/user', [UserController::class, 'index']);
 Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/order', [UserController::class, 'ordersum']);
 Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/support', [UserController::class, 'contactsupport']);
-
+// Route::get('/user/add-order', [UserController::class, 'order']);
 
 Route::post('/user/profile/post', [UserController::class, 'updateprofile']);
 

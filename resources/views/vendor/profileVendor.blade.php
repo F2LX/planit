@@ -1,4 +1,4 @@
-@extends('ui.user')
+@extends('ui.vendor')
 
 @section('content')
     <div class="p-5">
@@ -13,11 +13,18 @@
         @endif
         <form action="/user/profile/post" method="post">
         <div class="d-flex align-center justify-content-center profile-container">
-            <div class="d-flex flex-direction-column align-center justify-center avatar-profile">
-                <img src="https://images.unsplash.com/photo-1462062651745-495db7fa268a?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Avatar" class="avatar2">
-                <button class="changeavatar-button">Change Avatar</button>
-            </div>
-            
+                <div class="drop-box-2">
+                    <label for="input-file-2" id="drop-area-2">
+                        <input type="file" accept="image/*" id="input-file-2" hidden>
+                        <div id="img-view-2">
+                            <img src="https://images.unsplash.com/photo-1462062651745-495db7fa268a?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Avatar" class="avatarUp">
+                        </div>
+                            {{-- <div id="img-view-2">
+                                <img src="{{asset("img/UploadIcon.png")}}" alt="">
+                                <p>Drag and drop or click here<br>to upload image</p><span>Upload any image from desktop</span>
+                            </div> --}}
+                    </label>
+                </div>            
             <div class=" profile-desc">
                 
                     @csrf

@@ -17,6 +17,11 @@ Route::get('/vHome', function () {
     return view('vendor.homeVendor');
 });
 
+Route::get('/vProfile', function () {
+    $profile=auth()->user();
+    return view('vendor.profileVendor',compact('profile'));
+});
+
 Route::get('/vDetails', function () {
     return view('vendor.vendorDetails');
 });

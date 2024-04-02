@@ -1709,3 +1709,52 @@ tr:hover{
     color:#777;
     margin-top: 15px;
 }
+
+#drop-area-2{
+    width: 400px;
+    height: 400px;
+    background: #c9d4c2;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.drop-box-2{
+    width: 50%;
+    margin-right: 40px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-view-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px;
+    background: #f7f8ff;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-view-2 img{
+    width: 300px;
+    /* margin-top: 25px; */
+}
+
+.avatarUp{
+    width: 350px;
+    height: 300px;
+    border-radius: 500%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: 0.3s ease;
+}
+
+.avatarUp:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}

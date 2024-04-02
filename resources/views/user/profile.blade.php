@@ -12,6 +12,7 @@
             <p>Please fill your address</p>
         @endif
         <form action="/user/profile/post" method="post">
+            @csrf
         <div class="d-flex align-center justify-content-center profile-container">
             <div class="d-flex flex-direction-column align-center justify-center avatar-profile">
                 <img src="https://images.unsplash.com/photo-1462062651745-495db7fa268a?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Avatar" class="avatar2">

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('phonenumber');
             $table->string('address')->nullable();
             $table->string('role');
+            $table->string('image')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

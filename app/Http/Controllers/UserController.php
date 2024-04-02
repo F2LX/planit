@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -37,17 +38,37 @@ class UserController extends Controller
         return view('user.contactsupport');
     }
 
-    public function updateprofile(Request $request) {
-        $data=$request->validate([
+    public function updateprofile(Request $request)
+    {
+        $data = $request->validate([
             'name' => 'required',
             'email' => 'required|email',
             'address' => 'required',
-            'phonenumber' => 'required'
+            'phonenumber' => 'required',
+            'image' => 'image|mimes:jpeg,png,jpg,gif' // Validation rule for the image
         ]);
-
-        $userid=User::find(auth()->user()->id);
-        
+    
+        $userId = auth()->user()->id;
+        $user = User::findOrFail($userId);
+    
+        // Update profile data
+        $user->update([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'address' => $data['address'],
+            'phonenumber' => $data['phonenumber'],
+        ]);
+    
+        // Handle image upload
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('public/images');
+            $user->image = Storage::url($imagePath);
+            $user->save();
+        }
+    
+        return redirect()->back()->with('success', 'Profile updated successfully.');
     }
+    
     /**
      * Show the form for creating a new resource.
      */

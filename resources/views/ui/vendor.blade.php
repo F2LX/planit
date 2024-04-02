@@ -19,6 +19,9 @@
     {{-- Import Preloader CSS --}}
     <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
 
+    {{-- Mobile CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
+
     <title>Plan It - Vendor Area</title>
 </head>
 <body class="dashboard">

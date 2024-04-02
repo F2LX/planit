@@ -19,6 +19,9 @@
     {{-- Import Preloader CSS --}}
     <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
 
+    {{-- Mobile CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
+
     <title>User Area - Plan It</title>
 </head>
 <body class="dashboard">

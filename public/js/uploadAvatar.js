@@ -2,9 +2,9 @@ const Tempatdrop = document.getElementById('drop-area-2');
 const masukinFile = document.getElementById('masukin-file');
 const lihatGambar = document.getElementById('img-view-2');
 
-masukinFile.addEventListener("change", uploadImage)
+masukinFile.addEventListener("change", uploadGambar)
 
-function uploadImage(){
+function uploadGambar(){
     let imgLink = URL.createObjectURL(masukinFile.files[0]);
     lihatGambar.style.backgroundImage = `url(${imgLink})`;
     lihatGambar.textContent = "";

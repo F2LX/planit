@@ -1,6 +1,6 @@
 /* CSS Only for dashboard area! */
 body {
-    background: white;
+    background: #fffefd;
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
@@ -36,9 +36,9 @@ input[type="password"] {
 .menu {
     position: fixed;
     height: 100%;
-    background-color: #5E7153;
-    color: #FCFCE4;
-    padding: 10px;
+    background-color: #DDFFD9;
+    color: #5E7153;
+    padding: 10px 0 10px 10px;
     /* Width declared on animation.css */
 }   
 
@@ -46,15 +46,16 @@ input[type="password"] {
 
 .menu-nav li {
     height: 50px;
-    border-bottom: 1px solid grey;
     font-size: 16px;
-
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
 }
 
 .menu-nav li:hover {
     transition: 0.3s ease;
     border-radius: 10px;
-    background: #839678;
+    background: #83967834;
 }
 
 .menu-nav li span {
@@ -63,14 +64,10 @@ input[type="password"] {
 }
 
 
-.menu-nav li {
-    padding: 10px 12px;
-    border-bottom: 1px solid grey;
-}
-
 .active {
     background-color: #839678;
-    border-radius: 10px;
+    background: linear-gradient(to right, #83967846, #83967804);
+    border:0;
 }
 
 .menu > h2,ul > li {

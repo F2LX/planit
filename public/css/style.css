@@ -1611,7 +1611,7 @@ tr:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 30px;
+    height: 30%;
     
   }
 
@@ -1625,7 +1625,7 @@ tr:hover{
     outline: none;
     border-bottom: 1px solid;
     width: 100%;
-    height: 35px;
+    height: 100%;
     font-family: "Open Sans", sans-serif;
     background-color: rgba(247, 239, 239, 0.2);
     box-sizing: border-box;
@@ -1644,7 +1644,7 @@ tr:hover{
     width: 98%;
     padding: 10px;
     border-radius: 10px;
-    height: 150px;
+    height: 90%;
     outline: none;
     border: none;
     font-family: "Open Sans", sans-serif;
@@ -1677,7 +1677,7 @@ tr:hover{
 }
 
 #drop-area{
-    width: 950px;
+    width: 100%;
     height: 300px;
     padding: 30px;
     background: #c9d4c2;

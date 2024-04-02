@@ -28,7 +28,7 @@
                     </label>
             </div>
     </div>
-    <button type="submit">Submit</button>
+    <button class="submit" type="submit">Submit</button>
     </form>
 </div>
 

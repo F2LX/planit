@@ -40,6 +40,9 @@
     </nav>
     @include('ui.preloader')
     <div class="main-content-wrap">
+        @if(!request()->is("/"))
+        <div class="nav-padding"></div>
+        @endif
         @yield("content")
     </div>
 

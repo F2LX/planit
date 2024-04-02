@@ -24,6 +24,7 @@
 <body class="dashboard">
 
     <div class="wrapper d-flex">
+        <div class="menu-padding"></div>
         <div class="menu">
             <h2>Vendor Area</h2>
             <ul class="menu-nav">
@@ -60,6 +61,8 @@
     </div>
 
     <script src="{{ asset("js/preloader.js") }}"></script>
+    <script src="{{ asset("js/dashboard.js") }}"></script>
+    <script src="{{ asset("js/uploadImage.js") }}"></script>
 
 </body>
 </html>

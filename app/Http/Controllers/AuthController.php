@@ -54,12 +54,10 @@ class AuthController extends Controller
                 'name' => 'required',
                 'phonenumber' => 'required',
                 'email' => 'required|email',
-                'password' => 'required'
+                'password' => 'required',
+                'role' => 'required'
             ];
         $data=$request->validate($rules);
-        
-        // Set role to User by Default
-        $data['role'] = "user";
 
         // Encrypt using BCRYPT
         $data['password']=bcrypt($data['password']);

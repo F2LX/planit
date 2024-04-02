@@ -24,6 +24,7 @@
 <body class="dashboard">
 
     <div class="wrapper d-flex">
+        <div class="menu-padding"></div>
         <div class="menu">
             <h2>Admin Area</h2>
             <ul class="menu-nav">
@@ -54,7 +55,7 @@
                 <li>
                     <a href="" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">contact_support</span>
-                        <span class="nav-text">Contact Support</span>
+                        <span class="nav-text">Dashboard Support</span>
                     </a>
                 </li>
             </ul>
@@ -65,6 +66,7 @@
         </div>
     </div>
     
-    <script src="{{ asset("js/preloader.js") }}"></script> 
+    <script src="{{ asset("js/preloader.js") }}"></script>
+    <script src="{{ asset("js/dashboard.js") }}"></script>
 </body>
 </html>

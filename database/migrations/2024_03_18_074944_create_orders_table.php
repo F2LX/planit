@@ -16,6 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->integer("iduser");
             $table->integer("idvendor");
+            $table->string("eventname");
             $table->date("date");
         });
     }

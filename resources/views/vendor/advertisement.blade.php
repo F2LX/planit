@@ -28,13 +28,12 @@
                     </label>
             </div>
     </div>
-    <div class="d-flex justify-space-between">
-        <button class="submit" type="submit">Submit</button>
-        <div>
-            <label for="">Price:</label>
-            <input class="submit" placeholder="Input your price here" type="number" name="" id="">
-        </div>
+    <div>
+        <label for="">Price:</label>
+        <input class="submit" placeholder="Input your price here" type="number" name="" id="">
     </div>
+    <button class="submit" type="submit">Submit</button>
+    
     </form>
 </div>
 

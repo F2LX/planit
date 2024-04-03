@@ -42,7 +42,7 @@
                 </span> 
                 <h3 class="ml-5 on-going-text">First Online Meeting | 08.00 WIB </h3>
             </div>    
-            <button class="contact-vendor">Contact Vendor Now</button>
+            <button class="contact-vendor">Chat</button>
         </div>
 
         <div class="d-flex w-100">

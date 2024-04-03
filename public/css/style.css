@@ -1921,3 +1921,17 @@ textarea{
     margin-bottom: 20px;
     font-size: 2em;
 }
+
+.submit-price{
+    width: 98%;
+    background-color: #e7ebe5;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(33, 24, 24);
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+    border: 3px solid #5F6F52;
+    transition: 0.3s ease;
+}

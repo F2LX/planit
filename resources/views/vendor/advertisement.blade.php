@@ -6,14 +6,19 @@
     @csrf
     <div class="w-100 d-flex flex-direction-column">
         <h2>Post New ads</h2>
-            <p>Title:</p>
+            <p>Title</p>
             <div class="post-title">
                 <input placeholder="Input title here" type="text" name="title" id="">
             </div>
     
-            <p>Description:</p>
+            <p>Description</p>
             <div class="post-desc">
                 <textarea name="description" id="" cols="20" rows="10"></textarea>
+            </div>
+
+            <p>Event keywords</p>
+            <div class="post-title">
+                <input placeholder="Input title here" type="text" name="title" id="">
             </div>
 
             <p>Upload image:</p>
@@ -28,13 +33,12 @@
                     </label>
             </div>
     </div>
-    <div class="d-flex justify-space-between">
-        <button class="submit" type="submit">Submit</button>
-        <div>
-            <label for="">Price:</label>
-            <input class="submit" placeholder="Input your price here" type="number" name="" id="">
-        </div>
+    <div>
+        <label for="">Price:</label>
+        <input class="submit-price" placeholder="Input your price here" type="number" name="Submit price" id="">
     </div>
+    <button class="submit" type="submit">Submit</button>
+    
     </form>
 </div>
 

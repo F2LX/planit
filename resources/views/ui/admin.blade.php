@@ -29,7 +29,9 @@
     <div class="wrapper d-flex">
         <div class="menu-padding"></div>
         <div class="menu">
-            <h2>Plan It</h2>
+            <div class="d-flex w-100 align-center">
+                <img class="logo-sidebar" src="{{ asset("img/logo-green.png") }}" alt="">
+            </div>
             <ul class="menu-nav">
                 <li>
                     <a href="" class="nav-link d-flex align-center flex-direction-row">

@@ -209,6 +209,12 @@ a {
     background-color: white;
 }
 
+.logo-sidebar {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+
 .searchbar {
     width: 800px;
 }
@@ -621,7 +627,6 @@ div.content {
 .future > .second > .notes{
     color: black;
 }
-
 
 #zoom-ikon{
     font-size: 25px;

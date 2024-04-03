@@ -29,7 +29,9 @@
     <div class="wrapper d-flex">
         <div class="menu-padding"></div>
         <div class="menu">
-            <h2>User Area</h2>
+            <div class="d-flex w-100 align-center">
+                <img class="logo-sidebar" src="{{ asset("img/logo-green.png") }}" alt="">
+            </div>
             <ul class="menu-nav">
                 <li class="{{ request()->is('user') ? 'active' : '' }}">
                     <a href="/user" class="nav-link d-flex align-center flex-direction-row">
@@ -59,9 +61,23 @@
         </div>
         @include('ui.preloader')
         <div class="content p-5">
-            <button class="btn btn-minimize" id="dashboardMinimize"><span class="material-symbols-outlined">
-                menu
-                </span></button>
+            <div class="d-flex w-100">
+                <button class="btn btn-minimize" id="dashboardMinimize"><span class="material-symbols-outlined">
+                    menu
+                    </span></button>
+                <div class="d-flex align-center header-home w-100">
+                    
+                    <button class="back-to-without-back">
+                        <p>User Dashboard</p>
+                    </button>
+        
+                    <h3>Hi, <span class="name-color">{{ auth()->user()->name }}</span> !</h3>
+                    <span class="material-symbols-outlined ml-5" id="zoom-ikon">
+                        notifications
+                    </span>   
+                </div>
+            </div>
+            <hr>
             @yield('content')
         </div>
     </div>

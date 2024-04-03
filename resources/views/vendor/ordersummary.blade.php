@@ -1,4 +1,4 @@
-@extends('ui.admin')
+@extends('ui.vendor')
 
 @section('content')
     <div class="p-5">
@@ -18,16 +18,12 @@
                     <th>No</th>
                     <th>Order History</th>
                     <th>Price</th>
-                    <th>Vendor Name</th>
-                    <th>Ordered By</th>
                     <th>Action</th>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>Lunch for Work</td>
                     <td>$1000</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <span class="material-symbols-outlined" id="star-ikon">
@@ -53,8 +49,6 @@
                     <td>2</td>
                     <td>Dinner for Work</td>
                     <td>$830</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <span class="material-symbols-outlined" id="star-ikon">
@@ -80,8 +74,6 @@
                     <td>3</td>
                     <td>Birthday Lunch</td>
                     <td>$80</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <span class="material-symbols-outlined" id="star-ikon">
@@ -107,8 +99,6 @@
                     <td>4</td>
                     <td>Skiingg</td>
                     <td>$7000</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <span class="material-symbols-outlined" id="star-ikon">
@@ -134,8 +124,6 @@
                     <td>5</td>
                     <td>Basketball Party</td>
                     <td>$8700</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <span class="material-symbols-outlined" id="star-ikon">
@@ -161,8 +149,6 @@
                     <td>6</td>
                     <td>My Marriage Packet</td>
                     <td>$2200</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <span class="material-symbols-outlined" id="star-ikon">
@@ -188,8 +174,6 @@
                     <td>7</td>
                     <td>Party Night</td>
                     <td>$300</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <div class="d-flex">
@@ -220,9 +204,6 @@
                     <td>8</td>
                     <td>Nobar Dulu</td>
                     <td>$10</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
-
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <div class="d-flex">
@@ -253,8 +234,6 @@
                     <td>9</td>
                     <td>Ketoprak Packet</td>
                     <td>$200</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <div class="d-flex">
@@ -285,8 +264,6 @@
                     <td>10</td>
                     <td>Sale Packet</td>
                     <td>$1800</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <div class="d-flex">
@@ -317,8 +294,6 @@
                     <td>11</td>
                     <td>Anniversy Packet</td>
                     <td>$550</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <div class="d-flex">
@@ -349,8 +324,6 @@
                     <td>12</td>
                     <td>Party Boys</td>
                     <td>$900</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex button-action">
                             <a href="#popup" class="view">View</a>
@@ -363,8 +336,6 @@
                     <td>13</td>
                     <td>Winter Birthday Theme Package</td>
                     <td>$450</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex button-action">
                             <a href="#popup" class="view">View</a>
@@ -377,8 +348,6 @@
                     <td>14</td>
                     <td>Girl's Packet</td>
                     <td>$600</td>
-                    <td>Taylor Series</td>
-                    <td>JeTeLika Prix</td>
                     <td>
                         <div class="d-flex button-action">
                             <a href="#popup" class="view">View</a>

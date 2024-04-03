@@ -2,18 +2,6 @@
 
 @section('content')
     <div class="p-5">
-        <div class="d-flex align-center header-home">
-            <button class="back-to-without-back">
-                <p>Payment</p>
-            </button>
-
-            <h3>Hi, <span class="name-color">{{ auth()->user()->name }}</span> !</h3>
-            <span class="material-symbols-outlined ml-5" id="zoom-ikon">
-                notifications
-            </span>   
-        </div>
-        <hr>
-
         <div class="wrapper-payment">
             <div class="total-cost-information">
                 <h3>Total Cost</h3>

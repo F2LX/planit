@@ -13,33 +13,7 @@ use Illuminate\Support\Facades\Storage;
 
 // TO BE ADDED: Middleware Grouping
 
-Route::post('/vendor/ads/add', [VendorController::class, 'store']);
-//Nper
-
-Route::get('/ads', function () {
-    return view('vendor.advertisement');
-});
-
-Route::get('/vContact', function () {
-    return view('vendor.vendorcontactsupport');
-});
-
-Route::get('/addDetails', function () {
-    return view('vendor.addDetails');
-});
-
-Route::get('/vHome', function () {
-    return view('vendor.homeVendor');
-});
-
-Route::get('/vProfile', function () {
-    $profile=auth()->user();
-    return view('vendor.profileVendor',compact('profile'));
-});
-
-Route::get('/vDetails', function () {
-    return view('vendor.vendorDetails');
-});
+// Vendor Routes Removed to VendorController
 
 // WIP Chat
 
@@ -64,14 +38,26 @@ Route::get('/vManagementSchedule', function () {
     return view('vendor.management-schedule');
 });
 
-
+// User
 Route::get('/user', [UserController::class, 'index']);
 Route::post('/user/profile/post', [UserController::class, 'updateprofile']);
 Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/order', [UserController::class, 'ordersum']);
 Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/support', [UserController::class, 'contactsupport']);
-// Route::get('/user/add-order', [UserController::class, 'order']);
+
+// Vendor
+Route::post('/vendor/ads/add', [VendorController::class, 'store']);
+Route::get('/vendor/profile', [VendorController::class, 'profile']);
+Route::get('/vendor', [VendorController::class, 'index']);
+Route::get('/vendor/ordersummary', [VendorController::class, 'ordersummary']);
+Route::get('/vendor/support', [VendorController::class, 'contactsupport']);
+Route::get('/vendor/ads', [VendorController::class, 'ads']);
+Route::get('/vendor/create', [VendorController::class, 'details']);
+
+
+
+
 
 
 // Admin Routes WIP

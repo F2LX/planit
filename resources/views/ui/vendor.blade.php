@@ -32,25 +32,25 @@
             <h2>Vendor Area</h2>
             <ul class="menu-nav">
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row"><span class="material-symbols-outlined">home</span><span class="nav-text">Home</span></a>
+                    <a href="/vendor" class="nav-link d-flex align-center flex-direction-row"><span class="material-symbols-outlined">home</span><span class="nav-text">Home</span></a>
                 </li>
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                    <a href="/vendor/ordersummary" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">description</span><span class="nav-text">Order Summary</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                    <a href="/vendor/ads" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">ads_click</span><span class="nav-text">Advertisement</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                    <a href="/vendor/profile" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">account_balance_wallet</span><span class="nav-text">Wallet</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                    <a href="/vendor/support" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">contact_support</span>
                         <span class="nav-text">Contact Support</span>
                     </a>
@@ -59,9 +59,24 @@
         </div>
         @include('ui.preloader')
         <div class="content p-5">
-            <button class="btn btn-minimize" id="dashboardMinimize"><span class="material-symbols-outlined">
-                menu
-                </span></button>
+            <div class="d-flex w-100">
+                <button class="btn btn-minimize" id="dashboardMinimize"><span class="material-symbols-outlined">
+                    menu
+                    </span></button>
+                <div class="d-flex align-center header-home w-100">
+                    
+                    <button class="back-to-without-back">
+                        <p>Order Summary</p>
+                    </button>
+        
+                    <h3>Hi, <span class="name-color">{{ auth()->user()->name }}</span> !</h3>
+                    <span class="material-symbols-outlined ml-5" id="zoom-ikon">
+                        notifications
+                    </span>   
+                </div>
+            </div>
+            <hr>
+            
             @yield('content')
         </div>
     </div>

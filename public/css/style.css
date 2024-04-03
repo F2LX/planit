@@ -205,6 +205,10 @@ a {
     background-color: green;
 }
 
+.btn-minimize {
+    background-color: white;
+}
+
 .searchbar {
     width: 800px;
 }

@@ -12,31 +12,45 @@ class VendorController extends Controller
      */
     public function index()
     {
-        //
+        return view('vendor.home');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function contactsupport()
     {
-        //
+        return view('vendor.contactsupport');
     }
 
+    public function profile()
+    {
+        $profile=auth()->user();
+        return view('vendor.profile',compact('profile'));
+    }
+
+    public function ads()
+    {
+        return view('vendor.advertisement');
+    }
+
+    public function ordersummary()
+    {
+        return view('vendor.ordersummary');
+    }
+
+
+    public function details()
+    {
+        return view('vendor.create');
+    }
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        // $data = $request->validate([
-        //     'title' => 'required',
-        //     'description' => 'required',
-        //     'image' => 'image|mimes:jpeg,jpg,png,gi'
-        // ]);
-
-        // $order = new Order();
-        // $order = $data;
         
+        // This will update vendor account
     }
 
     /**

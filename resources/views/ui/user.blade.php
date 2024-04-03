@@ -59,9 +59,23 @@
         </div>
         @include('ui.preloader')
         <div class="content p-5">
-            <button class="btn btn-minimize" id="dashboardMinimize"><span class="material-symbols-outlined">
-                menu
-                </span></button>
+            <div class="d-flex w-100">
+                <button class="btn btn-minimize" id="dashboardMinimize"><span class="material-symbols-outlined">
+                    menu
+                    </span></button>
+                <div class="d-flex align-center header-home w-100">
+                    
+                    <button class="back-to-without-back">
+                        <p>Order Summary</p>
+                    </button>
+        
+                    <h3>Hi, <span class="name-color">{{ auth()->user()->name }}</span> !</h3>
+                    <span class="material-symbols-outlined ml-5" id="zoom-ikon">
+                        notifications
+                    </span>   
+                </div>
+            </div>
+            <hr>
             @yield('content')
         </div>
     </div>

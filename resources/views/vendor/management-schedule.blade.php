@@ -1,20 +1,7 @@
-@extends('ui.user')
+@extends('ui.vendor')
 
 @section('content')
     <div class="p-5">
-        <div class="d-flex align-center header-home">
-            <button class="back-to-without-back">
-                <p>Order Summary</p>
-            </button>
-
-            <h3>Hi, <span class="name-color">{{ auth()->user()->name }}</span> !</h3>
-            <span class="material-symbols-outlined ml-5" id="zoom-ikon">
-                notifications
-            </span>   
-        </div>
-
-        <hr>
-
         <div class="d-flex align-center justify-content-between" id="searchbar-list">
             <input type="text" id="message-input" placeholder="Search">
             <button class="button-search">
@@ -29,13 +16,13 @@
             <table>
                 <tr>
                     <th>No</th>
-                    <th>Order History</th>
+                    <th>Customer Name</th>
                     <th>Price</th>
-                    <th>Action</th>
+                    <th>Rating</th>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>Lunch for Work</td>
+                    <td>Arjuna Andio Kece</td>
                     <td>$1000</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
@@ -45,8 +32,8 @@
                             <span class="material-symbols-outlined" id="star-ikon">
                                 star_rate_half
                             </span>
-                            <span class="material-symbols-outlined" id="star-ikon">
-                                star_rate_half
+                            <span class="material-symbols-outlined" id="star-ikon-gray">
+                                star
                             </span>
                             <span class="material-symbols-outlined" id="star-ikon-gray">
                                 star
@@ -60,7 +47,7 @@
 
                 <tr>
                     <td>2</td>
-                    <td>Dinner for Work</td>
+                    <td>Ashahra A. Cancii</td>
                     <td>$830</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
@@ -85,7 +72,7 @@
 
                 <tr>
                     <td>3</td>
-                    <td>Birthday Lunch</td>
+                    <td>Benedicta B. Slayy</td>
                     <td>$80</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
@@ -98,11 +85,11 @@
                             <span class="material-symbols-outlined" id="star-ikon">
                                 star_rate_half
                             </span>
-                            <span class="material-symbols-outlined" id="star-ikon-gray">
-                                star
+                            <span class="material-symbols-outlined" id="star-ikon">
+                                star_rate_half
                             </span>
-                            <span class="material-symbols-outlined" id="star-ikon-gray">
-                                star
+                            <span class="material-symbols-outlined" id="star-ikon">
+                                star_rate_half
                             </span>
                         </div>
                     </td>
@@ -110,7 +97,7 @@
 
                 <tr>
                     <td>4</td>
-                    <td>Skiingg</td>
+                    <td>Yehuda Kiw</td>
                     <td>$7000</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
@@ -120,8 +107,8 @@
                             <span class="material-symbols-outlined" id="star-ikon">
                                 star_rate_half
                             </span>
-                            <span class="material-symbols-outlined" id="star-ikon">
-                                star_rate_half
+                            <span class="material-symbols-outlined" id="star-ikon-gray">
+                                star
                             </span>
                             <span class="material-symbols-outlined" id="star-ikon-gray">
                                 star
@@ -135,7 +122,7 @@
 
                 <tr>
                     <td>5</td>
-                    <td>Basketball Party</td>
+                    <td>Shean Finnegan Sepuh</td>
                     <td>$8700</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
@@ -160,18 +147,18 @@
 
                 <tr>
                     <td>6</td>
-                    <td>My Marriage Packet</td>
+                    <td>Natasya F. J. Sepuh Invisible</td>
                     <td>$2200</td>
                     <td>
                         <div class="d-flex align-center justify-content-center">
                             <span class="material-symbols-outlined" id="star-ikon">
                                 star_rate_half
                             </span>
-                            <span class="material-symbols-outlined" id="star-ikon">
-                                star_rate_half
+                            <span class="material-symbols-outlined" id="star-ikon-gray">
+                                star
                             </span>
-                            <span class="material-symbols-outlined" id="star-ikon">
-                                star_rate_half
+                            <span class="material-symbols-outlined" id="star-ikon-gray">
+                                star
                             </span>
                             <span class="material-symbols-outlined" id="star-ikon-gray">
                                 star
@@ -185,157 +172,52 @@
                 
                 <tr>
                     <td>7</td>
-                    <td>Party Night</td>
+                    <td>Anna Cie Sama Sebelahnya</td>
                     <td>$300</td>
                     <td>
-                        <div class="d-flex align-center justify-content-center">
-                            <div class="d-flex">
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                            </div>
-                            <div>
-                                <button class="view ml-5">Save Rating</button>
-                            </div>
-                        </div>
+                        <p>No Rating</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td>8</td>
-                    <td>Nobar Dulu</td>
+                    <td>Kevin Salting</td>
                     <td>$10</td>
                     <td>
-                        <div class="d-flex align-center justify-content-center">
-                            <div class="d-flex">
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                            </div>
-                            <div>
-                                <button class="view ml-5">Save Rating</button>
-                            </div>
-                        </div>
+                        <p>No Rating</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td>9</td>
-                    <td>Ketoprak Packet</td>
+                    <td>Felix 1</td>
                     <td>$200</td>
                     <td>
-                        <div class="d-flex align-center justify-content-center">
-                            <div class="d-flex">
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                            </div>
-                            <div>
-                                <button class="view ml-5">Save Rating</button>
-                            </div>
-                        </div>
+                        <p>No Rating</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td>10</td>
-                    <td>Sale Packet</td>
+                    <td>Felix 2</td>
                     <td>$1800</td>
                     <td>
-                        <div class="d-flex align-center justify-content-center">
-                            <div class="d-flex">
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                            </div>
-                            <div>
-                                <button class="view ml-5">Save Rating</button>
-                            </div>
-                        </div>
+                        <p>No Rating</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td>11</td>
-                    <td>Anniversy Packet</td>
+                    <td>Never</td>
                     <td>$550</td>
                     <td>
-                        <div class="d-flex align-center justify-content-center">
-                            <div class="d-flex">
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                                <span class="material-symbols-outlined" id="star-ikon-black">
-                                    star
-                                </span>
-                            </div>
-                            <div>
-                                <button class="view ml-5">Save Rating</button>
-                            </div>
-                        </div>
+                        <p>No Rating</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td>12</td>
-                    <td>Party Boys</td>
+                    <td>Jessica Cici Dance</td>
                     <td>$900</td>
                     <td>
                         <div class="d-flex button-action">
@@ -347,7 +229,7 @@
                 </tr>
                 <tr>
                     <td>13</td>
-                    <td>Winter Birthday Theme Package</td>
+                    <td>Steven ex Komti</td>
                     <td>$450</td>
                     <td>
                         <div class="d-flex button-action">
@@ -359,7 +241,7 @@
                 </tr>
                 <tr>
                     <td>14</td>
-                    <td>Girl's Packet</td>
+                    <td>Christopher Soeharto</td>
                     <td>$600</td>
                     <td>
                         <div class="d-flex button-action">
@@ -371,7 +253,7 @@
                 </tr>
             </table>
         </div>
-        <a href="#popupSuccess" class="add-order">Add New Order</a>
+        <a href="#popupSuccess" class="add-order">Post New Schedule</a>
 
         <div class="popup" id="popupSuccess">
             <div class="popupSuccess-content">

@@ -16,7 +16,9 @@ Route::get('/ads', function () {
     return view('vendor.advertisement');
 });
 
-
+Route::get('/vContact', function () {
+    return view('vendor.vendorcontactsupport');
+});
 
 Route::get('/vHome', function () {
     return view('vendor.homeVendor');

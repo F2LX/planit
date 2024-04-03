@@ -17,5 +17,5 @@ Tempatdrop.addEventListener("dragover", function(e){
 Tempatdrop.addEventListener("drop", function(e){
     e.preventDefault();
     masukinFile.files = e.dataTransfer.files;
-    uploadImage();
+    uploadGambar();
 });

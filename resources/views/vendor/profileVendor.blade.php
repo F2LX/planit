@@ -8,9 +8,9 @@
             </span>
             <p class="ml-5">Profile</p>
         </button>
-        {{-- @if($profile->address==null) --}}
+        @if($profile->address==null)
             <p>Please fill your address</p>
-        {{-- @endif --}}
+        @endif
         <form action="/user/profile/post" method="post">
         <div class="d-flex align-center justify-content-center profile-container">
                 <div class="drop-box-2">

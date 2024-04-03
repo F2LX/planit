@@ -31,25 +31,25 @@
         <div class="menu">
             <h2>Plan It</h2>
             <ul class="menu-nav">
-                <li>
+                <li class="{{ request()->is('vendor') ? 'active' : '' }}">
                     <a href="/vendor" class="nav-link d-flex align-center flex-direction-row"><span class="material-symbols-outlined">home</span><span class="nav-text">Home</span></a>
                 </li>
-                <li>
+                <li class="{{ request()->is('vendor/ordersummary') ? 'active' : '' }}">
                     <a href="/vendor/ordersummary" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">description</span><span class="nav-text">Order Summary</span>
                     </a>
                 </li>
-                <li>
+                <li class="{{ request()->is('vendor/ads') ? 'active' : '' }}">
                     <a href="/vendor/ads" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">ads_click</span><span class="nav-text">Advertisement</span>
                     </a>
                 </li>
-                <li>
+                <li class="{{ request()->is('vendor/profile') ? 'active' : '' }}">
                     <a href="/vendor/profile" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">account_balance_wallet</span><span class="nav-text">Wallet</span>
                     </a>
                 </li>
-                <li>
+                <li class="{{ request()->is('vendor/support') ? 'active' : '' }}">
                     <a href="/vendor/support" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">contact_support</span>
                         <span class="nav-text">Contact Support</span>

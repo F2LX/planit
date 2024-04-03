@@ -23,6 +23,10 @@ Route::get('/vContact', function () {
     return view('vendor.vendorcontactsupport');
 });
 
+Route::get('/addDetails', function () {
+    return view('vendor.addDetails');
+});
+
 Route::get('/vHome', function () {
     return view('vendor.homeVendor');
 });

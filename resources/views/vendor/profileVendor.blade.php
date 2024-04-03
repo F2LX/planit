@@ -17,7 +17,7 @@
                     <label for="masukin-file" id="drop-area-2">
                         <input type="file" accept="image/*" name="image" id="masukin-file" hidden>
                         <div id="img-view-2">
-                            <img src="{{ Storage::url($profile->image) }}" alt="Gambar" class="avatarUp">
+                            <img src="{{ Storage::url($profile->image) }}" alt="" class="avatarUp">
 
                         </div>
                             {{-- <div id="img-view-2">

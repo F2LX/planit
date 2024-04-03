@@ -6,23 +6,33 @@
     @csrf
     <div class="w-100 d-flex flex-direction-column">
         <h2>Post New ads</h2>
-            <p>Title</p>
-            <div class="post-title">
+           
+            <div class="add-order-form">
+                <label for="">Title</label>
                 <input placeholder="Input title here" type="text" name="title" id="">
             </div>
     
-            <p>Description</p>
-            <div class="post-desc">
+            <div class="add-order-form">
+                <label for="">Description</label>
                 <textarea name="description" id="" cols="20" rows="10"></textarea>
             </div>
 
-            <p>Event keywords</p>
-            <div class="post-title">
+            <div class="add-order-form">
+                <label for="category">Category</label>
+                <Select name="category">
+                    <option value="Wedding">Wedding</option>
+                    <option value="Birthday Party">Birthday Party</option>
+                    <option value="Summer Party">Summer Party</option>
+                </Select>
+            </div>
+
+            <div class="add-order-form">
+                <label for="">Price</label>
                 <input placeholder="Input title here" type="text" name="title" id="">
             </div>
 
-            <p>Upload image:</p>
-            <div class="drop-box">
+            <div class="drop-box add-order-form">
+                <label for="">Upload Image</label>
                     <label for="input-file" id="drop-area">
                         <input type="file" name="image" accept="image/*" id="input-file" hidden>
                         <div id="img-view">
@@ -32,10 +42,6 @@
                         </div>
                     </label>
             </div>
-    </div>
-    <div>
-        <label for="">Price:</label>
-        <input class="submit-price" placeholder="Input your price here" type="number" name="Submit price" id="">
     </div>
     <button class="submit" type="submit">Submit</button>
     

@@ -61,10 +61,20 @@ class UserController extends Controller
     
         // Handle image upload
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('public/images');
-            $user->image = Storage::url($imagePath);
+            // Delete the previous image if it exists
+            if ($user->image) {
+                // Hapus gambar menggunakan jalur penyimpanan lama
+                Storage::delete('public/' . $user->image);
+            }
+            
+    
+            $imagePath = $request->file('image')->store('images', 'public');
+            $user->image = $imagePath; // Simpan jalur gambar di database
             $user->save();
+            
         }
+
+        $user->save();
     
         return redirect()->back()->with('success', 'Profile updated successfully.');
     }

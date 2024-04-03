@@ -8,6 +8,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VendorController;
 
+// Temporary Add Storage to Routes
+use Illuminate\Support\Facades\Storage;
+
 // TO BE ADDED: Middleware Grouping
 
 Route::post('/vendor/ads/add', [VendorController::class, 'store']);
@@ -78,7 +81,9 @@ Route::get('/admin/advertisement', function() {
 Route::get('/', [AuthController::class, 'index']);
 
 Route::get('/login', [AuthController::class, 'login']);
-
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/logout',[AuthController::class,'logout']);
+});
 Route::get('/register', [AuthController::class, 'register']);
 
 Route::post('/register/create', [AuthController::class, 'store']);

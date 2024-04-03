@@ -66,6 +66,7 @@
     <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="{{ asset("js/dashboard.js") }}"></script>
     <script src="{{ asset("js/uploadImage.js") }}"></script>
+    <script src="{{ asset("js/uploadAvatar.js") }}"></script>
 
 </body>
 </html>

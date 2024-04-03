@@ -1631,7 +1631,7 @@ table tr td p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 30px;
+    height: 30%;
     
   }
 
@@ -1645,12 +1645,11 @@ table tr td p{
     outline: none;
     border-bottom: 1px solid;
     width: 100%;
-    height: 35px;
+    height: 100%;
     font-family: "Open Sans", sans-serif;
-    background-color: rgba(115, 99, 99, 0.2);
+    background-color: rgba(247, 239, 239, 0.2);
     box-sizing: border-box;
 }
-
 
 .post-desc{
     display: flex;
@@ -1662,13 +1661,16 @@ table tr td p{
 .post-desc > textarea{
     resize: none;
     overflow: hidden;
-    width: 100%;
-    height: 150px;
+    width: 98%;
+    padding: 10px;
+    border-radius: 10px;
+    height: 90%;
     outline: none;
     border: none;
     font-family: "Open Sans", sans-serif;
     border-bottom: 1px solid;
-    background-color: rgba(115, 99, 99, 0.2);
+    /* background-color: #fff; */
+    background-color: rgba(247, 239, 239, 0.2)
 }
 
 .post-img{
@@ -1685,21 +1687,6 @@ table tr td p{
     margin: 0px;
 }
 
-/* input[type="file"] {
-    width: 180px;
-    height: auto;
-    cursor: pointer;
-} */
-
-.upload-button {
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
 .drop-box{
     width: 100%;
     min-height: 30vh;
@@ -1710,7 +1697,7 @@ table tr td p{
 }
 
 #drop-area{
-    width: 100%;
+    width: 94%;
     height: 300px;
     padding: 30px;
     background: #c9d4c2;
@@ -1742,6 +1729,55 @@ table tr td p{
     font-size: 12px;
     color:#777;
     margin-top: 15px;
+}
+
+#drop-area-2{
+    width: 300px;
+    height: 300px;
+    background: #c9d4c2;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.drop-box-2{
+    width: 50%;
+    margin-right: 40px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-view-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px;
+    background: #f7f8ff;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-view-2 img{
+    width: 300px;
+    /* margin-top: 25px; */
+}
+
+.avatarUp{
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: 0.3s ease;
+}
+
+.avatarUp:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
 }
 
 .add-order-form {

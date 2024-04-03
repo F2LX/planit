@@ -15,8 +15,6 @@
             <div class="post-desc">
                 <textarea name="description" id="" cols="20" rows="10"></textarea>
             </div>
-            {{-- <br> --}}
-            
 
             <p>Upload image:</p>
             <div class="drop-box">
@@ -30,7 +28,13 @@
                     </label>
             </div>
     </div>
-    <button type="submit">Submit</button>
+    <div class="d-flex justify-space-between">
+        <button class="submit" type="submit">Submit</button>
+        <div>
+            <label for="">Price:</label>
+            <input class="submit" placeholder="Input your price here" type="number" name="" id="">
+        </div>
+    </div>
     </form>
 </div>
 

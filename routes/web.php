@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Storage;
 // TO BE ADDED: Middleware Grouping
 
 Route::post('/vendor/ads/add', [VendorController::class, 'store']);
+//Nper
 
 Route::get('/ads', function () {
     return view('vendor.advertisement');
@@ -80,6 +81,10 @@ Route::get('/admin', function () {
 
 Route::get('/admin/order', function () {
     return view('admin.ordersummary');
+});
+
+Route::get('/admin/category', function () {
+    return view('admin.categorypage');
 });
 
 Route::get('/admin/profile', function () {

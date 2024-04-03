@@ -2004,3 +2004,16 @@ textarea{
     color:#777;
     margin-top: 15px;
 }
+
+.input-cat{
+    border-bottom: 1px solid;
+    background-color: #f9f9f9;
+    padding: 10px;
+    font-size: 10px;
+    width: 30%;
+}
+
+.input-cat input{
+    background-color: #f9f9f9;
+    width: 100% ;
+}

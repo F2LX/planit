@@ -2,18 +2,6 @@
 
 @section('content')
     <div class="p-5">
-        <div class="d-flex align-center header-home">
-            <button class="back-to-without-back">
-                <p>Order Summary</p>
-            </button>
-
-            <h3>Hi, <span class="name-color">McDidi</span> !</h3>
-            <span class="material-symbols-outlined ml-5" id="zoom-ikon">
-                notifications
-            </span>   
-        </div>
-        <hr>
-
         <div class="d-flex align-center justify-content-between" id="searchbar-list">
             <input type="text" id="message-input" placeholder="Search">
             <button class="button-search">

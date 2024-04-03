@@ -2,12 +2,6 @@
 
 @section('content')
     <div class="p-5">
-        <button class=" d-flex align-center back-to">
-            <span class="material-symbols-outlined" id="arrow-ikon">
-                arrow_back_ios
-            </span>
-            <p class="ml-5">Profile</p>
-        </button>
         @if($profile->address==null)
             <p>Please fill your address</p>
         @endif

@@ -29,7 +29,7 @@
     <div class="wrapper d-flex">
         <div class="menu-padding"></div>
         <div class="menu">
-            <h2>Admin Area</h2>
+            <h2>Plan It</h2>
             <ul class="menu-nav">
                 <li>
                     <a href="" class="nav-link d-flex align-center flex-direction-row">
@@ -72,7 +72,7 @@
                 <div class="d-flex align-center header-home w-100">
                     
                     <button class="back-to-without-back">
-                        <p>Order Summary</p>
+                        <p>Admin Area</p>
                     </button>
         
                     <h3>Hi, <span class="name-color">{{ auth()->user()->name }}</span> !</h3>

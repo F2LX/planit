@@ -57,14 +57,12 @@
 
                     <div class="d-flex flex-direction-row profile-button">
                         <button type="submit" class="btn btn-green mt-70">Update Profile</button>
-                        <a href="/logout">
-                            <button class="btn btn-red d-flex mt-70 align-center ml-5">
+                            <a href="/logout" class="btn btn-red d-flex mt-70 align-center ml-5">
                                 <span class="material-symbols-outlined">
                                     logout
                                 </span>
                                 Sign Out
-                            </button>
-                        </a>
+                            </a>
             
                     </div>
                 

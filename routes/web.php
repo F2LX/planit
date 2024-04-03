@@ -36,6 +36,18 @@ Route::get('/user/chat', function () {
 Route::get('/user/add-order', function () {
     return view('user.order');
 });
+Route::get('/user/pay', function () {
+    return view('user.pay');
+});
+Route::get('/vPostSchedule', function () {
+    return view('vendor.posting-schedule');
+});
+Route::get('/vUpdateSchedule', function () {
+    return view('vendor.update-schedule');
+});
+Route::get('/vManagementSchedule', function () {
+    return view('vendor.management-schedule');
+});
 
 
 Route::get('/user', [UserController::class, 'index']);

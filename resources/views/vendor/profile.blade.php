@@ -51,6 +51,9 @@
 
                     <div class="d-flex flex-direction-row profile-button">
                         <button type="submit" class="btn btn-green mt-70">Update Profile</button>
+                            <a href="/vendor/create" class="btn btn-blue d-flex mt-70 align-center ml-5">
+                                Edit Vendor Profile
+                            </a>
                             <a href="/logout" class="btn btn-red d-flex mt-70 align-center ml-5">
                                 <span class="material-symbols-outlined">
                                     logout

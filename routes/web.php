@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VendorController;
 
@@ -47,13 +48,14 @@ Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/support', [UserController::class, 'contactsupport']);
 
 // Vendor
-Route::post('/vendor/ads/add', [VendorController::class, 'store']);
+Route::post('/vendor/ads/add', [AdsController::class, 'store']);
 Route::get('/vendor/profile', [VendorController::class, 'profile']);
 Route::get('/vendor', [VendorController::class, 'index']);
 Route::get('/vendor/ordersummary', [VendorController::class, 'ordersummary']);
 Route::get('/vendor/support', [VendorController::class, 'contactsupport']);
 Route::get('/vendor/ads', [VendorController::class, 'ads']);
 Route::get('/vendor/create', [VendorController::class, 'details']);
+Route::post('/vendor/create/post', [VendorController::class, 'store']);
 
 
 

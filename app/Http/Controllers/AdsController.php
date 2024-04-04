@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ads;
 use Illuminate\Http\Request;
+use App\Models\Vendor;
 
 class AdsController extends Controller
 {
@@ -28,7 +29,27 @@ class AdsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $userId = auth()->user()->id;
+        $data=$request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'category' => 'required',
+            'price' => 'required',
+            'image' => 'image|mimes:jpeg,png,jpg,gif'
+        ]);
+        $vendor=Vendor::where('userid',$userId)->get();
+
+        $data['idvendor']=$vendor['id'];
+
+        $data['vendorname']=$vendor['name'];
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('images', 'public');
+            $data['image']= $imagePath;
+        }
+        
+        Ads::create($data);
+        return redirect()->back();
     }
 
     /**

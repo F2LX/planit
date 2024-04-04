@@ -22,36 +22,14 @@
             <img class="vendor-top-img" src="{{ asset("img/homecouples.png") }}" alt="">
             <h2 class="text-center text-before-img">Plan Your Event Now!</h2>
             <div class="d-flex w-100 align-center justify-space-between flex-wrap">
+                @foreach ($ads as $ad)
                 <div class="card">
                     <img src="" alt="">
-                    <h3>Taylor Series Vendor</h3>
+                    <h3>{{ $ad->title }}</h3>
                     <p>Starts from $500</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Taylor Series Vendor</h3>
-                    <p>Starts from $500</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Taylor Series Vendor</h3>
-                    <p>Starts from $500</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Taylor Series Vendor</h3>
-                    <p>Starts from $500</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Taylor Series Vendor</h3>
-                    <p>Starts from $500</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Taylor Series Vendor</h3>
-                    <p>Starts from $500</p>
-                </div>
+                </div
+                @endforeach
+                >
             </div>
         </div>
     </div>

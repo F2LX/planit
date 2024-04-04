@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Ads extends Model
 {
     use HasFactory;
+
+    protected $fillable=[
+        'idvendor',
+        'vendorname',
+        'title',
+        'description',
+        'category',
+        'price',
+        'image'
+    ];
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Models\Vendor;
 
 class VendorController extends Controller
 {
@@ -49,10 +50,26 @@ class VendorController extends Controller
      */
     public function store(Request $request)
     {
-        
-        // This will update vendor account
-    }
+        $data=$request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'img1' => 'image|mimes:jpeg,png,jpg,gif',
+            'img2' => 'image|mimes:jpeg,png,jpg,gif',
+            'img3' => 'image|mimes:jpeg,png,jpg,gif'
+        ]);
+        $data['userid']=auth()->user()->id;
 
+        $imagePath = $request->file('img1')->store('images', 'public');
+        $data['img1']= $imagePath;
+
+        $imagePath = $request->file('img2')->store('images', 'public');
+        $data['img2']= $imagePath;
+        
+        $imagePath = $request->file('img3')->store('images', 'public');
+        $data['img3']= $imagePath;
+
+        Vendor::create($data);
+    }
     /**
      * Display the specified resource.
      */

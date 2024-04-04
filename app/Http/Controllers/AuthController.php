@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Ads;
 
 
 class AuthController extends Controller
@@ -14,7 +15,8 @@ class AuthController extends Controller
      */
     public function index()
     {
-        return view("home");
+        $ads=Ads::all();
+        return view("home",compact('ads'));
     }
 
     public function login()
@@ -38,8 +40,6 @@ class AuthController extends Controller
         if (auth()->user()->role==="user") {
             return redirect()->intended('/user');
         }
-        
-
         // TO BE ADDED: Middleware validation if auth()->user()->role === 'admin','user','vendor'
     } else {
         return redirect()->back()->withErrors(['email' => 'Email atau password tidak valid.']);
@@ -60,7 +60,7 @@ class AuthController extends Controller
                 'role' => 'required'
             ];
         $data=$request->validate($rules);
-
+        
         // Encrypt using BCRYPT
         $data['password']=bcrypt($data['password']);
         User::create($data); 

@@ -15,6 +15,12 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->integer("idvendor");
+            $table->string('vendorname');
+            $table->string('title');
+            $table->string('description');
+            $table->string('category');
+            $table->integer('price');
+            $table->string('image');
         });
     }
 

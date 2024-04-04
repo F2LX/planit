@@ -12,6 +12,8 @@ class Order extends Model
     protected $fillable = [
         'iduser',
         'idvendor',
+        'idvendorowner',
+        'eventname',
         'date'
     ];
 }

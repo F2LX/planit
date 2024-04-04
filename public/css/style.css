@@ -205,6 +205,11 @@ a {
     background-color: green;
 }
 
+.btn-blue {
+    color: white;
+    background-color: #2E61C3;
+}
+
 .btn-minimize {
     background-color: white;
 }

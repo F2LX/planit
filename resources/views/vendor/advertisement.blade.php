@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="p-5">
-    <form action="/vendor/ads/add" method="post">
+    <form action="/vendor/ads/add" method="post" enctype="multipart/form-data">
     @csrf
     <div class="w-100 d-flex flex-direction-column">
         <h2>Post New ads</h2>
@@ -19,16 +19,16 @@
 
             <div class="add-order-form">
                 <label for="category">Category</label>
-                <Select name="category">
+                <select name="category">
                     <option value="Wedding">Wedding</option>
                     <option value="Birthday Party">Birthday Party</option>
                     <option value="Summer Party">Summer Party</option>
-                </Select>
+                </select>
             </div>
 
             <div class="add-order-form">
                 <label for="">Price</label>
-                <input placeholder="Input title here" type="text" name="title" id="">
+                <input placeholder="Input title here" type="number" name="price" id="">
             </div>
 
             <div class="drop-box add-order-form">
@@ -36,7 +36,7 @@
                     <label for="input-file" id="drop-area">
                         <input type="file" name="image" accept="image/*" id="input-file" hidden>
                         <div id="img-view">
-                            <img src="{{asset("img/UploadIcon.png")}}" alt="">
+                            <img src="{{ asset("img/UploadIcon.png") }}" alt="">
                             <p>Drag and drop or click here<br>to upload image</p>
                             <span>Upload any image from desktop</span>
                         </div>

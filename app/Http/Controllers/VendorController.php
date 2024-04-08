@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Order;
+use App\Models\Ads;
 use App\Models\Vendor;
 
 class VendorController extends Controller
@@ -43,7 +43,15 @@ class VendorController extends Controller
 
     public function details()
     {
-        return view('vendor.create');
+        $vendor = Vendor::find(auth()->user()->id);
+        return view('vendor.create',compact('vendor'));
+    }
+
+    public function adslist()
+    {
+        $vendorid = Vendor::where('userid',auth()->user()->id)->first();
+        $ads = Ads::where('idvendor',$vendorid->id)->get();
+        return view('vendor.adslist',compact('ads'));
     }
     /**
      * Store a newly created resource in storage.

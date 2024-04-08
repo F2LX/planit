@@ -41,8 +41,8 @@
                         <span class="material-symbols-outlined">description</span><span class="nav-text">Order Summary</span>
                     </a>
                 </li>
-                <li class="{{ request()->is('vendor/ads') ? 'active' : '' }}">
-                    <a href="/vendor/ads" class="nav-link d-flex align-center flex-direction-row">
+                <li class="{{ request()->is('vendor/ads-list') ? 'active' : '' }}">
+                    <a href="/vendor/ads-list" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">ads_click</span><span class="nav-text">Advertisement</span>
                     </a>
                 </li>

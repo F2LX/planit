@@ -13,7 +13,6 @@ class Vendor extends Model
         'userid',
         'name',
         'description',
-        'category',
         'img1',
         'img2',
         'img3',

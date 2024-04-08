@@ -52,19 +52,19 @@ Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/support', [UserController::class, 'contactsupport']);
 
 // Vendor
-Route::post('/vendor/ads/add', [AdsController::class, 'store']);
 Route::get('/vendor/profile', [VendorController::class, 'profile']);
 Route::get('/vendor', [VendorController::class, 'index']);
 Route::get('/vendor/ordersummary', [VendorController::class, 'ordersummary']);
 Route::get('/vendor/support', [VendorController::class, 'contactsupport']);
-Route::get('/vendor/ads', [VendorController::class, 'ads']);
+Route::get('/vendor/create-ads', [VendorController::class, 'ads']);
+Route::get('/vendor/ads-list', [VendorController::class, 'adslist']);
 Route::get('/vendor/create', [VendorController::class, 'details']);
 Route::post('/vendor/create/post', [VendorController::class, 'store']);
 
-
-
-
-
+// Vendor: Ads
+Route::post('/vendor/ads/add', [AdsController::class, 'store']);
+Route::put('/vendor/ads/update/{id}', [AdsController::class, 'update']);
+Route::delete('/vendor/ads/delete/{id}', [AdsController::class, 'destory']);
 
 // Admin Routes WIP
 Route::get('/admin', function () {

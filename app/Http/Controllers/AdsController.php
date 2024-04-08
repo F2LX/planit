@@ -38,8 +38,8 @@ class AdsController extends Controller
             'price' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif'
         ]);
-        $vendor=Vendor::where('userid',$userId)->get();
-
+        $vendor=Vendor::where('userid',$userId)->first();
+        // dd($vendor);
         $data['idvendor']=$vendor['id'];
 
         $data['vendorname']=$vendor['name'];
@@ -71,7 +71,7 @@ class AdsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Ads $ads)
+    public function update(Request $request)
     {
         //
     }

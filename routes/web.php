@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Storage;
 
 // Vendor Routes Removed to VendorController
 
+Route::get('/list', function () {
+    return view('list');
+});
+
 // WIP Chat
 
 Route::get('/user/chat', function () {

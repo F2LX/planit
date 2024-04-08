@@ -1,0 +1,154 @@
+/* sisil punya hehehe */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:white;
+    padding-left: 10px;
+  }
+  .judulWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .findWrapper
+  {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .Category{
+    display: flex;
+    align-items: center;
+    height:130%;
+    width:30%;
+  }
+  .City{
+    display: flex;
+    align-items: center;
+    height:130%;
+    width:30%;
+  }
+  .find{
+    display: flex;
+    align-items: center;
+    margin-top: 0 !important;
+    justify-content: center;
+    height: 130%;
+    width: 20%;
+    background-color:#5E7153;
+    border-radius: 5px;
+    color: #fcfce4;
+    font-weight: bolder;
+    
+  }
+
+  .find:hover{
+    background-color: #839678;
+}
+ 
+  .gambarWrapper{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .judulGambar{
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .hargaTerbaik{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color:rgba(212, 41, 41, 0.893);
+    width: 50%;
+    height: 12%;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+ .frame{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #5E7153;
+    height: 85%;
+    width: 17%;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: #fcfce4;
+ }
+
+.frame:hover{
+    transition: 0.4s ease;
+    transform: scale(1.05);
+}
+
+.gambar{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content:center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.bintang{
+    align-items: center;
+}
+
+.atribute{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.favorite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+.buy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.galery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.save{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pic-size{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+} 
+.keterangan{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.margin-0{
+    margin: 0px;
+}

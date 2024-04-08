@@ -13,6 +13,15 @@
 
     {{-- Import Mobile CSS --}}
     <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
+
+    @if(request()->is('/'))
+        <link rel="stylesheet" href="{{ asset("css/home.css") }}">
+    @endif
+
+    {{-- If request->is('list') --}}
+    @if (request()->is('list'))
+        <link rel="stylesheet" href="{{ asset("css/list.css") }}">
+    @endif
    
 </head>
 <body>

@@ -1,0 +1,161 @@
+/* Naomi punya tapi ancur semua hehe */
+
+.utama{
+    display: flex;
+
+    width: 100%;
+    height: fit-content;
+    padding-top: -220px;
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+    background: url('../img/homebg-edit.png') no-repeat;
+    background-size: 100%;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.classdiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bigtitle{
+    padding: 0;
+    font-size: 120px;
+    text-align: center;
+    margin-top : 0px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #5F6F52, #a1e9b5);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.image{
+    width: 100%;
+    height: 81%;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    font-size: 18px;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+    font-weight: 2500;
+    color: #fcfce4;
+}
+
+.price{
+    font-size: 9;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fcfce4;
+}
+
+.star{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fcfce4;
+}
+
+.section-new{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: row;
+    background-color: #5F6F52;
+    /* gap: 10px; */
+}
+
+.card-new{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+    margin-top: 20px;
+    margin: 30px;
+    background-color: #A9B489;
+    border-radius: 30px;
+}
+
+.image-person{
+    border-radius: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.text-person{
+    width: 50%;
+    font-size: 15px;
+    text-align: justify;
+    justify-content: center;
+    padding-left: 50px;
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 20px;
+    color: beige;
+}
+
+.card2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card3{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: -35px;
+}
+
+.name{
+    font-size: 20px;
+    text-align: left;
+    padding: 0;
+    margin: 10px 0 0 10px;
+    color: #fcfce4;
+}
+
+.position{
+    font-size: 12px;
+    text-align: left;
+    padding: 0;
+    margin: 10px 0 0 10px;
+    color: #fcfce4;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img-wrapper-home{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card:hover{
+    transition: 0.4s ease;
+    transform: scale(1.05);
+}
+
+.bigtitle:hover{
+    transition: 0.4s ease;
+    transform: scale(1.05);
+}

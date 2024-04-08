@@ -1,4 +1,4 @@
-@extends('ui.vendor')
+@extends('ui.user')
 
 @section('content')
     <div class="p-5">

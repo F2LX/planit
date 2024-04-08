@@ -66,34 +66,15 @@ Route::post('/vendor/ads/add', [AdsController::class, 'store']);
 Route::put('/vendor/ads/update/{id}', [AdsController::class, 'update']);
 Route::delete('/vendor/ads/delete/{id}', [AdsController::class, 'destory']);
 
-// Admin Routes WIP
-Route::get('/admin', function () {
-    return view('admin.home');
-});
 
-Route::get('/admin/order', function () {
-    return view('admin.ordersummary');
-});
+// Admin
+Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin/order', [AdminController::class, 'order']);
+Route::get('/admin/category', [AdminController::class, 'category']);
+Route::get('/admin/advertisement', [AdminController::class, 'advertisement']);
+Route::get('/admin/profile', [AdminController::class, 'profile']);
+Route::get('/admin/support-desk', [AdminController::class, 'supportdesk']);
 
-Route::get('/admin/category', function () {
-    return view('admin.categorypage');
-});
-
-Route::get('/admin/profile', function () {
-// dummy
-    $profile=auth()->user();
-    return view('admin.profile',compact('profile'));
-})->middleware('admin');
-
-Route::get('/admin/profile', function () {
-    // dummy
-    $profile=auth()->user();
-    return view('admin.profile',compact('profile'));
-});
-
-Route::get('/admin/advertisement', function() {
-    return view('admin.list-advertisement');
-});
 // Route::get('/contoh2', function() {
 //     return view('home');
 // });

@@ -33,32 +33,40 @@
                 <img class="logo-sidebar" src="{{ asset("img/logo-green.png") }}" alt="">
             </div>
             <ul class="menu-nav">
-                <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                <li class="{{ request()->is('admin') ? 'active' : '' }}">
+                    <a href="/admin" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">home</span>
                         <span class="nav-text">Home</span>
                     </a>
                 </li>
-                <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                <li class="{{ request()->is('admin/order') ? 'active' : '' }}">
+                    <a href="/admin/order" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">description</span>
                         <span class="nav-text">Order Summary</span>
                     </a>
                 </li>
-                <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                <li class="{{ request()->is('admin/advertisement') ? 'active' : '' }}">
+                    <a href="/admin/advertisement" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">ads_click</span>
                         <span class="nav-text">Advertisement</span>
                     </a>
                 </li>
-                <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                <li class="{{ request()->is('admin/category') ? 'active' : '' }}">
+                    <a href="/admin/category" class="nav-link d-flex align-center flex-direction-row">
+                        <span class="material-symbols-outlined">
+                            category
+                            </span>
+                        <span class="nav-text">Category</span>
+                    </a>
+                </li>
+                <li class="{{ request()->is('admin/profile') ? 'active' : '' }}">
+                    <a href="/admin/profile" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">account_balance_wallet</span>
                         <span class="nav-text">Wallet</span>
                     </a>
                 </li>
-                <li>
-                    <a href="" class="nav-link d-flex align-center flex-direction-row">
+                <li class="{{ request()->is('admin/support-desk') ? 'active' : '' }}">
+                    <a href="/admin/support-desk" class="nav-link d-flex align-center flex-direction-row">
                         <span class="material-symbols-outlined">contact_support</span>
                         <span class="nav-text">Dashboard Support</span>
                     </a>

@@ -11,16 +11,35 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view("user.dashboard");
+        return view("admin.home");
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function order()
     {
-        //
+        return view("admin.ordersummary");
     }
+
+    public function category()
+    {
+        return view("admin.categorypage");
+    }
+
+
+    public function advertisement()
+    {
+        return view("admin.list-advertisement");
+    }
+
+    public function profile()
+    {
+        $profile=auth()->user();
+        return view('admin.profile',compact('profile'));
+    }
+    public function supportdesk()
+    {
+        return view("admin.home");
+    }
+
 
     /**
      * Store a newly created resource in storage.

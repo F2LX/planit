@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('description');
             $table->string('category');
             $table->integer('price');
-            $table->string('flag')->nullable;
+            $table->string('flag')->nullable();
             $table->string('image');
         });
     }

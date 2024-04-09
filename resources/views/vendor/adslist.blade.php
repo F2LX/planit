@@ -20,6 +20,7 @@
                     <th>Price</th>
                     <th>Action</th>
                 </tr>
+                @if ($ads)
                 @foreach ($ads as $ad)
                 <tr>
                     <td>{{ $ad->id }}</td>
@@ -34,6 +35,7 @@
                     </td>
                 </tr>
                 @endforeach
+                @endif
             </table>
         </div>
         <a href="/vendor/create-ads" class="add-order">Add New Ads</a>

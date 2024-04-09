@@ -60,6 +60,8 @@ Route::get('/vendor/create-ads', [VendorController::class, 'ads']);
 Route::get('/vendor/ads-list', [VendorController::class, 'adslist']);
 Route::get('/vendor/create', [VendorController::class, 'details']);
 Route::post('/vendor/create/post', [VendorController::class, 'store']);
+Route::get('/vendor/update', [VendorController::class, 'idxupdate']);
+Route::put('/vendor/update/put', [VendorController::class, 'updateVendor']);
 
 // Vendor: Ads
 Route::post('/vendor/ads/add', [AdsController::class, 'store']);

@@ -40,6 +40,10 @@ class AdsController extends Controller
         ]);
         $vendor=Vendor::where('userid',$userId)->first();
         // dd($vendor);
+
+        if (!$vendor) {
+            return redirect('/vendor/create');
+        }
         $data['idvendor']=$vendor['id'];
 
         $data['vendorname']=$vendor['name'];
@@ -71,9 +75,9 @@ class AdsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request)
+    public function update(Request $request, string $id)
     {
-        //
+        
     }
 
     /**

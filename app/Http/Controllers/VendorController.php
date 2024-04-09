@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Ads;
 use App\Models\Vendor;
+use Illuminate\Support\Facades\Storage;
 
 class VendorController extends Controller
 {
@@ -43,16 +44,78 @@ class VendorController extends Controller
 
     public function details()
     {
+
         $vendor = Vendor::find(auth()->user()->id);
-        return view('vendor.create',compact('vendor'));
+        if ($vendor) {
+            return redirect('/vendor/update');
+        }
+        return view('vendor.create');
     }
 
     public function adslist()
     {
         $vendorid = Vendor::where('userid',auth()->user()->id)->first();
-        $ads = Ads::where('idvendor',$vendorid->id)->get();
+        if ($vendorid) {
+            $ads = Ads::where('idvendor',$vendorid->id)->get();
+            return view('vendor.adslist',compact('ads'));
+        }
+        $ads=null;
         return view('vendor.adslist',compact('ads'));
     }
+
+    public function idxupdate()
+    {
+        $vendor = Vendor::find(auth()->user()->id);
+        return view('vendor.update',compact('vendor'));
+    }
+
+    public function updateVendor(Request $request)
+    {
+        $vendor=Vendor::where('userid',auth()->user()->id)->first();
+        $data = $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'img1' => 'image|mimes:jpeg,png,jpg,gif',
+            'img2' => 'image|mimes:jpeg,png,jpg,gif',
+            'img3' => 'image|mimes:jpeg,png,jpg,gif'
+        ]);
+
+        // Menghapus gambar lama jika ada gambar baru yang diunggah
+        if ($request->hasFile('img1')) {
+            Storage::disk('public')->delete($vendor->img1);
+        }
+
+        if ($request->hasFile('img2')) {
+            Storage::disk('public')->delete($vendor->img2);
+        }
+
+        if ($request->hasFile('img3')) {
+            Storage::disk('public')->delete($vendor->img3);
+        }
+
+        // Mengunggah gambar baru dan menyimpan jalur gambar yang baru
+        if ($request->hasFile('img1')) {
+            $imagePath = $request->file('img1')->store('images', 'public');
+            $data['img1'] = $imagePath;
+        }
+
+        if ($request->hasFile('img2')) {
+            $imagePath = $request->file('img2')->store('images', 'public');
+            $data['img2'] = $imagePath;
+        }
+        
+        if ($request->hasFile('img3')) {
+            $imagePath = $request->file('img3')->store('images', 'public');
+            $data['img3'] = $imagePath;
+        }
+
+        // Update data vendor dengan data baru
+        $vendor->update($data);
+
+        return redirect('/vendor/profile')->with('success', 'Vendor updated successfully');
+    }
+
+
     /**
      * Store a newly created resource in storage.
      */
@@ -77,36 +140,5 @@ class VendorController extends Controller
         $data['img3']= $imagePath;
 
         Vendor::create($data);
-    }
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
     }
 }

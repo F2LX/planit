@@ -115,7 +115,16 @@ class VendorController extends Controller
         return redirect('/vendor/profile')->with('success', 'Vendor updated successfully');
     }
 
+    public function vendorDetails($id) {
+        // passing ads id bukan vendor id
+        $ads=Ads::find($id);
+        $vendorid=$ads->idvendor;
+        $vendor=Vendor::find($vendorid);
 
+        $adsbyvendor=Ads::where('idvendor',$vendorid)->get();
+
+        return view('vendor.vendor-details',compact('vendor','ads','adsbyvendor'));
+    }
     /**
      * Store a newly created resource in storage.
      */

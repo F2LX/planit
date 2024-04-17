@@ -8,6 +8,14 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
+.main-content-wrap {
+    position: relative;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 17px;
+}
 
 select {
     box-sizing: border-box;
@@ -211,7 +219,7 @@ a {
 }
 
 .searchbar {
-    width: 800px;
+    width: 100%;
 }
 
 .searchbar >input{
@@ -279,6 +287,13 @@ a {
 }
 button {
     cursor: pointer;
+}
+.p-3 {
+    padding: 10px;
+}
+
+.p-4 {
+    padding: 20px;
 }
 
 .p-5 {
@@ -1451,8 +1466,10 @@ table tr td p{
 }
 
 .width-pic{
-    width: 110%;
+    width: 100%;
+    min-height: 100%;
 }
+
 
 .card-details-2{
     background-color: #5E7153;
@@ -1463,6 +1480,7 @@ table tr td p{
     height: 348px;
     /* padding: 5px 10px; */
     width: 97%;
+    overflow: hidden;
 }
 
 .ml-20{
@@ -1471,7 +1489,6 @@ table tr td p{
 
 .text-justify{
     text-align: justify;
-    font-size: large;
 }
 
 .mr-20{
@@ -1528,17 +1545,18 @@ table tr td p{
     color: #F9ECC9;
     margin:5px;
     border-radius: 10px;
-    height: 95%;
+    height: fit-content;
     /* margin: 50px; */
     margin-left: 40px;
     margin-right: 40px;
-    padding: 5px 20px;
     width: 30%;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .wrapper-details-2{
     display: flex;
-    height: 700px;
+    height: fit-content;
     width: 100%;
 }
 
@@ -1993,4 +2011,14 @@ textarea{
 .input-cat input{
     background-color: #f9f9f9;
     width: 100% ;
+}
+
+.card-thumbnail {
+    width: 100%;
+}
+
+.ads-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 18px;
 }

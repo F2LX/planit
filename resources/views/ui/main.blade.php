@@ -31,8 +31,8 @@
          </div>
             <ul class="d-inline text-right d-flex align-center">
                 <li><a href="/">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/list">Vendors</a></li>
+                <li><a href="/register">Register</a></li>
 
                 @if(!auth()->user())
                 <li><a href="/login" class="btn btn-nav d-flex align-center"><span class="material-symbols-outlined">

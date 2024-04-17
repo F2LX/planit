@@ -1,4 +1,5 @@
 /* Naomi punya tapi ancur semua hehe */
+/* UDAH BAGUS COOO */
 
 .utama{
     display: flex;
@@ -17,6 +18,46 @@
     justify-content: center;
 
     flex-direction: column;
+}
+
+.section-search-naomi {
+    padding: 200px;
+}
+
+.section-top-vendor-naomi {
+    margin-top: 320px;
+}
+
+.big-text-plan-naomi {
+    position: relative;
+    font-size: 90px;
+    background:linear-gradient(270deg,#A9B489,#5E7153);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.small-text-event-naomi {
+    margin-top: -40px;
+    margin-right: 5px;
+    font-size: 45px;
+    background:linear-gradient(270deg,#A9B489,#5E7153);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    text-align: right;
+}
+
+.card-naomi {
+    background-color: #5E7153;
+    color: #F9ECC9;
+    margin:18px;
+    border-radius: 10px;
+    height: 285px;
+    padding: 18px 18px;
+    width: 20%;
+    margin-top: 20px;
 }
 
 .classdiv{
@@ -58,7 +99,7 @@
 }
 
 .price{
-    font-size: 9;
+    font-size: 15px;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -101,14 +142,12 @@
 }
 
 .text-person{
-    width: 50%;
+    width: 60%;
     font-size: 15px;
     text-align: justify;
-    justify-content: center;
     padding-left: 50px;
     margin: 0;
-    margin-right: 25px;
-    margin-top: 20px;
+    margin-right: 50px;
     color: beige;
 }
 
@@ -122,7 +161,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin-top: -35px;
+    margin-top: -40px;
 }
 
 .name{
@@ -150,7 +189,7 @@
     overflow: hidden;
 }
 
-.card:hover{
+.card-naomi:hover{
     transition: 0.4s ease;
     transform: scale(1.05);
 }
@@ -158,4 +197,24 @@
 .bigtitle:hover{
     transition: 0.4s ease;
     transform: scale(1.05);
+}
+
+.judul{
+    font-size: 22px;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-weight: 2500;
+    color: #fcfce4;
+}
+
+.subjudul{
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #fcfce4;
 }

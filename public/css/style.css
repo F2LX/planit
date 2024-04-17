@@ -145,16 +145,6 @@ a {
     background-size: 100%;
 }
 
-.vendor-top-img {
-    top: 10%;
-    position: absolute;
-    left: 10vw;
-    margin-top: 150px;
-    width: 41%;
-    z-index: 2;
-    top: 0;
-}
-
 .h-100 {
     height: 100%;
 }
@@ -260,15 +250,6 @@ a {
 .flex-direction-column {
     flex-direction: column;
 }
-
-.big-text-plan {
-    position: relative;
-    font-size: 90px;
-    background:linear-gradient(270deg,#A9B489,#5E7153);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .small-text-event {
     margin-top: -40px;
     margin-right: 5px;
@@ -280,27 +261,11 @@ a {
     position: relative;
     text-align: right;
 }
-.card {
-    background-color: #5E7153;
-    color: #F9ECC9;
-    margin:5px;
-    border-radius: 10px;
-    height: 300px;
-    padding: 5px 10px;
-    width: 30%;
-}
 .flex-wrap {
     flex-wrap: wrap;
 }
 .text-center {
     text-align: center;
-}
-.section-search {
-    padding: 200px;
-}
-
-.section-top-vendor {
-    margin-top: 450px;
 }
 
 .form-text {
@@ -940,8 +905,6 @@ table tr td p{
     background-color: #f1f1f1;
     border: 10px;
     padding: 7px 8px;
-    position: absolute;
-    bottom: 3%;
     width: 48.2%;
 }
 

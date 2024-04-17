@@ -9,9 +9,6 @@ use App\Http\Controllers\AdsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VendorController;
 
-// Temporary Add Storage to Routes
-use Illuminate\Support\Facades\Storage;
-
 // TO BE ADDED: Middleware Grouping
 
 // Vendor Routes Removed to VendorController

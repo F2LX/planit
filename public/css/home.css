@@ -22,6 +22,7 @@
     align-items: center;
     background: url('./../img/homebg.png');
     background-size: cover;
+    background-position: center !important;
     background-repeat: no-repeat;
 }
 
@@ -51,7 +52,6 @@
 .card-naomi {
     background-color: #5E7153;
     color: #F9ECC9;
-    margin:18px;
     border-radius: 10px;
     height: 285px;
     padding: 18px 18px;
@@ -63,7 +63,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 

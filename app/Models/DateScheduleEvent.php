@@ -16,4 +16,5 @@ class DateScheduleEvent extends Model
         'schedule_title',
         'isDone'
     ];
+    protected $guarded = ['id'];
 }

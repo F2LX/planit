@@ -258,6 +258,10 @@ a {
 .flex-direction-column {
     flex-direction: column;
 }
+
+.flex-direction-row {
+    flex-direction: row;
+}
 .small-text-event {
     margin-top: -40px;
     margin-right: 5px;
@@ -2021,4 +2025,13 @@ textarea{
     width: 100%;
     overflow: hidden;
     border-radius: 18px;
+}
+
+.error > p {
+    color: white;
+    text-align: center;
+}
+
+.outerpanel:has(.error) {
+    background: #cc0202;
 }

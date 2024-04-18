@@ -18,4 +18,5 @@ class Ads extends Model
         'price',
         'image'
     ];
+    protected $guarded = ['id'];
 }

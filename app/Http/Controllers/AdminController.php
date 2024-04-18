@@ -37,7 +37,7 @@ class AdminController extends Controller
     }
     public function supportdesk()
     {
-        return view("admin.home");
+        return view("admin.dashboardsupport");
     }
 
 

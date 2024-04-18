@@ -39,10 +39,14 @@ class AuthController extends Controller
 
         if (auth()->user()->role==="user") {
             return redirect()->intended('/user');
+        } else if (auth()->user()->role==="vendor") {
+            return redirect()->intended('/vendor');
+        } else if (auth()->user()->role==="admin") {
+            return redirect()->intended('/admin');
         }
         // TO BE ADDED: Middleware validation if auth()->user()->role === 'admin','user','vendor'
     } else {
-        return redirect()->back()->withErrors(['email' => 'Email atau password tidak valid.']);
+        return redirect()->back()->with('error','Email atau password salah!');
     }
 }
 
@@ -55,7 +59,7 @@ class AuthController extends Controller
             [
                 'name' => 'required',
                 'phonenumber' => 'required',
-                'email' => 'required|email',
+                'email' => 'required|email|unique:users,email',
                 'password' => 'required',
                 'role' => 'required'
             ];
@@ -65,7 +69,7 @@ class AuthController extends Controller
         $data['password']=bcrypt($data['password']);
         User::create($data); 
         
-        return redirect()->intended("/login");
+        return redirect()->intended("/login")->with('success','Account Registered Successfully');
     }
     public function logout() {
         Auth::logout();

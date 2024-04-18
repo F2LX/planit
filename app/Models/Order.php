@@ -16,4 +16,5 @@ class Order extends Model
         'eventname',
         'date'
     ];
+    protected $guarded = ['id'];
 }

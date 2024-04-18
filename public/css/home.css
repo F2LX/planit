@@ -1,11 +1,11 @@
 /* Naomi punya tapi ancur semua hehe */
 /* UDAH BAGUS COOO */
 
-.utama{
+.utama {
     display: flex;
     width: 100%;
     height: fit-content;
-    background-size: 100%;  
+    background-size: 100%;
     flex-direction: column;
 }
 
@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('./../img/homebg.png');
+    background: url("./../img/homebg.png");
     background-size: cover;
     background-position: center !important;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 
 .big-text-plan-naomi {
     font-size: 90px;
-    background:linear-gradient(270deg,#A9B489,#5E7153);
+    background: linear-gradient(270deg, #a9b489, #5e7153);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,7 +42,7 @@
     margin-top: -40px;
     margin-right: 5px;
     font-size: 45px;
-    background:linear-gradient(270deg,#A9B489,#5E7153);
+    background: linear-gradient(270deg, #a9b489, #5e7153);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,8 +50,8 @@
 }
 
 .card-naomi {
-    background-color: #5E7153;
-    color: #F9ECC9;
+    background-color: #5e7153;
+    color: #f9ecc9;
     border-radius: 10px;
     height: 285px;
     padding: 18px 18px;
@@ -59,7 +59,7 @@
     margin-top: 20px;
 }
 
-.classdiv{
+.classdiv {
     display: flex;
     width: 100%;
     align-items: center;
@@ -67,19 +67,19 @@
     flex-wrap: wrap;
 }
 
-.bigtitle{
+.bigtitle {
     padding: 0;
     font-size: 80px;
     text-align: center;
-    margin-top : 0px;
+    margin-top: 0px;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #5F6F52, #a1e9b5);
+    background: linear-gradient(to right, #5f6f52, #a1e9b5);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
-.image{
+.image {
     width: 100%;
     height: 81%;
     border-radius: 10px;
@@ -88,16 +88,16 @@
     margin: 0;
 }
 
-.title{
+.title {
     font-size: 18px;
-    text-align:center;
+    text-align: center;
     padding: 0;
     margin: 0;
     font-weight: 2500;
     color: #fcfce4;
 }
 
-.price{
+.price {
     font-size: 15px;
     text-align: center;
     padding: 0;
@@ -105,34 +105,34 @@
     color: #fcfce4;
 }
 
-.star{
+.star {
     text-align: center;
     padding: 0;
     margin: 0;
     color: #fcfce4;
 }
 
-.section-new{
+.section-new {
     display: flex;
     width: 100%;
     margin-top: 50px;
     flex-direction: row;
-    background-color: #5F6F52;
+    background-color: #5f6f52;
     /* gap: 10px; */
 }
 
-.card-new{
+.card-new {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     height: 50%;
     margin-top: 20px;
-    margin: 30px;
-    background-color: #A9B489;
+    margin: 10px;
+    background-color: #a9b489;
     border-radius: 30px;
 }
 
-.image-person{
+.image-person {
     border-radius: 30px;
     width: 100%;
     align-items: center;
@@ -140,30 +140,30 @@
     margin: 0;
 }
 
-.text-person{
-    width: 60%;
+.text-person {
+    width: 50%;
     font-size: 15px;
     text-align: justify;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     margin: 0;
-    margin-right: 50px;
+    margin-right: 10px;
     color: beige;
 }
 
-.card2{
+.card2 {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.card3{
+.card3 {
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin-top: -40px;
 }
 
-.name{
+.name {
     font-size: 20px;
     text-align: left;
     padding: 0;
@@ -171,7 +171,7 @@
     color: #fcfce4;
 }
 
-.position{
+.position {
     font-size: 12px;
     text-align: left;
     padding: 0;
@@ -181,26 +181,28 @@
     margin-bottom: 5px;
 }
 
-.img-wrapper-home{
-    width: 200px;
+.img-wrapper-home {
+    display: flex;
+    width: 50%;
+    height: 180px;
     padding: 10px;
     margin: 10px;
     overflow: hidden;
 }
 
-.card-naomi:hover{
+.card-naomi:hover {
     transition: 0.4s ease;
     transform: scale(1.05);
 }
 
-.bigtitle:hover{
+.bigtitle:hover {
     transition: 0.4s ease;
     transform: scale(1.05);
 }
 
-.judul{
+.judul {
     font-size: 22px;
-    text-align:center;
+    text-align: center;
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
@@ -209,7 +211,7 @@
     color: #fcfce4;
 }
 
-.subjudul{
+.subjudul {
     font-size: 15px;
     text-align: center;
     padding: 0;

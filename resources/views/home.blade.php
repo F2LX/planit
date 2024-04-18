@@ -15,7 +15,8 @@
                 </form>
             </div>
          </div>
-
+        </div>
+        
         <div class="section-top-vendor-naomi">
            <h2 class="bigtitle">Plan Your Event Now!</h2>
             <div class="classdiv">
@@ -236,9 +237,9 @@
                 </div>
             </div>
 
-         <div class="card-new">
-            <h1 class="judul">Testimonial</h1>
-            <h2 class="subjudul">From Our Customer</h2>
+            <div class="card-new">
+                <h1 class="judul">Testimonial</h1>
+                <h2 class="subjudul">From Our Customer</h2>
                 <div class="card2">
                     <div class="img-wrapper-home">
                         <img class="image-person" src="https://shopee.co.id/inspirasi-shopee/wp-content/uploads/2023/08/Raffi-Ahmad-kekayaan-6.jpg" alt="">
@@ -250,8 +251,6 @@
                     <p class="position">CEO Of RANS</p>
                 </div>
             </div>
-
         </div>
-      </div>
     </div>
 @endsection

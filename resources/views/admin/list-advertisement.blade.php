@@ -33,7 +33,7 @@
                         <div class="d-flex button-action">
                             <a href="#popup" class="view">View</a>
                             <a href="#popupUpdate" class="update">Update</a>
-                            <a href="#popupReport" class="report">Report</a>
+                            <a href="#popupReport" class="report">Delete</a>
                         </div>
                     </td>
                 </tr>
@@ -47,7 +47,7 @@
                         <div class="d-flex button-action">
                             <a href="#popup" class="view">View</a>
                             <a href="#popupUpdate" class="update">Update</a>
-                            <a href="#popupReport" class="report">Report</a>
+                            <a href="#popupReport" class="report">Delete</a>
                         </div>
                     </td>
                 </tr>
@@ -61,7 +61,7 @@
                         <div class="d-flex button-action">
                             <a href="#popup" class="view">View</a>
                             <a href="#popupUpdate" class="update">Update</a>
-                            <a href="#popupReport" class="report">Report</a>
+                            <a href="#popupReport" class="report">Delete</a>
                         </div>
                     </td>
                 </tr>

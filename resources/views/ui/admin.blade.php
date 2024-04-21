@@ -61,8 +61,8 @@
                 </li>
                 <li class="{{ request()->is('admin/profile') ? 'active' : '' }}">
                     <a href="/admin/profile" class="nav-link d-flex align-center flex-direction-row">
-                        <span class="material-symbols-outlined">account_balance_wallet</span>
-                        <span class="nav-text">Wallet</span>
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <span class="nav-text">Profile</span>
                     </a>
                 </li>
                 <li class="{{ request()->is('admin/support-desk') ? 'active' : '' }}">
@@ -98,5 +98,9 @@
     
     <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="{{ asset("js/dashboard.js") }}"></script>
+    <script src="{{ asset("js/uploadImage.js") }}"></script>
+    <script src="{{ asset("js/uploadImage2.js") }}"></script>
+    <script src="{{ asset("js/uploadImage3.js") }}"></script>
+    <script src="{{ asset("js/uploadAvatar.js") }}"></script>
 </body>
 </html>

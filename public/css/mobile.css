@@ -11,8 +11,7 @@
     }
     .gambarWrapper {
         flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     .frame {
         width: 40% !important;
@@ -25,11 +24,13 @@
         margin-top: 50px;
         flex-direction: column !important;
         background-color: #5f6f52;
+        justify-content: center;
+        align-items: center;
         /* gap: 10px; */
     }
 
     .card-new {
-        width: 98% !important;
+        width: 95% !important;
     }
     nav ul {
         display: none !important;
@@ -41,6 +42,7 @@
         display: flex;
         position: fixed;
         z-index: 99999;
+        height: 100px;
         bottom: 0;
         justify-content: space-around;
         align-items: center;

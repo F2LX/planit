@@ -8,10 +8,6 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-.main-content-wrap {
-    position: relative;
-    overflow-x: hidden;
-}
 
 p {
     font-size: 17px;
@@ -268,7 +264,7 @@ a {
     margin-top: -40px;
     margin-right: 5px;
     font-size: 45px;
-    background:linear-gradient(270deg,#A9B489,#5E7153);
+    background:linear-gradient(270deg,#A9B489 20%,#5E7153 120%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

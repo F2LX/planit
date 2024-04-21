@@ -220,7 +220,7 @@
                 <h2 class="subjudul">From Our Customer</h2>
                 <div class="card2">
                     <div class="img-wrapper-home">
-                        <img class="image-person" src="https://cdn1-production-images-kly.akamaized.net/bINtHqzUW95VVjtjDCvkh1SQOjo=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2922109/original/010429200_1569423175-Nagita_Slavina_foto_by_Bambang_E_Ros_8.jpg" alt="">
+                        <img class="image-person" src="https://akcdn.detik.net.id/community/media/visual/2024/04/13/raffi-ahmad-dan-nagita-slavina-2.jpeg?w=1080" alt="">
                     </div>
                     <h2 class="text-person">“Plan It mempermudah promosi acara dan koneksi dengan klien. Fitur-fitur intuitif dan analitiknya membantu meningkatkan visibilitas dan efisiensi. Dengan Plan It, bisnis acara saya sukses lebih cepat.”</h2>
                 </div>

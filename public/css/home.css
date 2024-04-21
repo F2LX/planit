@@ -1,6 +1,11 @@
 /* Naomi punya tapi ancur semua hehe */
 /* UDAH BAGUS COOO */
 
+.main-content-wrap {
+    position: relative;
+    overflow-x: hidden;
+}
+
 .utama {
     display: flex;
     width: 100%;

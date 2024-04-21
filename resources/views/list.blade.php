@@ -200,57 +200,57 @@
             </div>
 
             {{-- paste --}}
-     <div class="frame">
-        <div class="gambar align-center flex-direction-column">
-            <img class="pic-size" src="https://media.istockphoto.com/id/1133873119/id/foto/pengaturan-tabel-untuk-acara.jpg?s=612x612&w=0&k=20&c=3OHhi6g9l287s5D9yRI19dOhR23FF7xIgfL3g3JOY_k=" alt="">
-        </div>
-        
-        <div class="keterangan">
-            <h3 class="margin-0">Cerita Kita</h3>
-            <h5 class="margin-0">Hotel Venue</h5>
-            {{-- bintang --}}
-            <div class="bintang">
-                <span class="material-symbols-outlined">
-                    star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-            </div>
-            
-            {{-- atribute --}}
-            <div class="atribute">
-                {{-- love --}}
-                <div class="favorite">
-                    <span class="material-symbols-outlined">
-                        favorite
-                    </span>
-                <div class="love-count">
-                    <h6 class="love-count">35</h6>
-                </div>  
+            <div class="frame">
+                <div class="gambar align-center flex-direction-column">
+                    <img class="pic-size" src="https://media.istockphoto.com/id/1133873119/id/foto/pengaturan-tabel-untuk-acara.jpg?s=612x612&w=0&k=20&c=3OHhi6g9l287s5D9yRI19dOhR23FF7xIgfL3g3JOY_k=" alt="">
                 </div>
                 
-                {{-- galery --}}
-                <div class="galery">
-                    <span class="material-symbols-outlined">
-                        photo_library
-                        </span>
-                <div class="galery-count">
-                    <h6 class="galery-count">30</h6>
-                </div>
+                <div class="keterangan">
+                    <h3 class="margin-0">Cerita Kita</h3>
+                    <h5 class="margin-0">Hotel Venue</h5>
+                    {{-- bintang --}}
+                    <div class="bintang">
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                    </div>
+                    
+                    {{-- atribute --}}
+                    <div class="atribute">
+                        {{-- love --}}
+                        <div class="favorite">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        <div class="love-count">
+                            <h6 class="love-count">35</h6>
+                        </div>  
+                        </div>
+                        
+                        {{-- galery --}}
+                        <div class="galery">
+                            <span class="material-symbols-outlined">
+                                photo_library
+                                </span>
+                        <div class="galery-count">
+                            <h6 class="galery-count">30</h6>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
             {{-- paste --}}
             <div class="frame">
@@ -417,112 +417,112 @@
             </div>
 
             {{-- paste --}}
-     <div class="frame">
-        <div class="gambar align-center flex-direction-column">
-            <img class="pic-size" src="https://images.unsplash.com/photo-1520444451380-ebe0f7b9cfd5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c291bmQlMjBzeXN0ZW18ZW58MHx8MHx8fDA%3D" alt="">
-            <p class="hargaTerbaik">Most Popular</p>
-        </div>
-        
-        <div class="keterangan">
-            <h3 class="margin-0">SemuaAkuDirayakan.id</h3>
-            <h5 class="margin-0">Sounds System</h5>
-            {{-- bintang --}}
-            <div class="bintang">
-                <span class="material-symbols-outlined">
-                    star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-            </div>
-            
-            {{-- atribute --}}
-            <div class="atribute">
-                {{-- love --}}
-                <div class="favorite">
-                    <span class="material-symbols-outlined">
-                        favorite
-                    </span>
-                <div class="love-count">
-                    <h6 class="love-count">9</h6>
-                </div>  
+            <div class="frame">
+                <div class="gambar align-center flex-direction-column">
+                    <img class="pic-size" src="https://images.unsplash.com/photo-1520444451380-ebe0f7b9cfd5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c291bmQlMjBzeXN0ZW18ZW58MHx8MHx8fDA%3D" alt="">
+                    <p class="hargaTerbaik">Most Popular</p>
                 </div>
                 
-                {{-- galery --}}
-                <div class="galery">
-                    <span class="material-symbols-outlined">
-                        photo_library
-                        </span>
-                <div class="galery-count">
-                    <h6 class="galery-count">13</h6>
-                </div>
+                <div class="keterangan">
+                    <h3 class="margin-0">SemuaAkuDirayakan.id</h3>
+                    <h5 class="margin-0">Sounds System</h5>
+                    {{-- bintang --}}
+                    <div class="bintang">
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                    </div>
+                    
+                    {{-- atribute --}}
+                    <div class="atribute">
+                        {{-- love --}}
+                        <div class="favorite">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        <div class="love-count">
+                            <h6 class="love-count">9</h6>
+                        </div>  
+                        </div>
+                        
+                        {{-- galery --}}
+                        <div class="galery">
+                            <span class="material-symbols-outlined">
+                                photo_library
+                                </span>
+                        <div class="galery-count">
+                            <h6 class="galery-count">13</h6>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    {{-- paste --}}
-    <div class="frame">
-        <div class="gambar align-center flex-direction-column">
-            <img class="pic-size" src="https://images.unsplash.com/photo-1604668915840-580c30026e5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRlY29yYXRpb24lMjBiaXJ0aGRheXxlbnwwfHwwfHx8MA%3D%3D" alt="">
-            <p class="hargaTerbaik">Most Popular</p>
-        </div>
-        
-        <div class="keterangan">
-            <h3 class="margin-0">WithUs.id</h3>
-            <h5 class="margin-0">Decoration</h5>
-            {{-- bintang --}}
-            <div class="bintang">
-                <span class="material-symbols-outlined">
-                    star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-                 <span class="material-symbols-outlined">
-                     star
-                    </span>
-            </div>
-            
-            {{-- atribute --}}
-            <div class="atribute">
-                {{-- love --}}
-                <div class="favorite">
-                    <span class="material-symbols-outlined">
-                        favorite
-                    </span>
-                <div class="love-count">
-                    <h6 class="love-count">9</h6>
-                </div>  
+            {{-- paste --}}
+            <div class="frame">
+                <div class="gambar align-center flex-direction-column">
+                    <img class="pic-size" src="https://images.unsplash.com/photo-1604668915840-580c30026e5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRlY29yYXRpb24lMjBiaXJ0aGRheXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                    <p class="hargaTerbaik">Most Popular</p>
                 </div>
                 
-                {{-- galery --}}
-                <div class="galery">
-                    <span class="material-symbols-outlined">
-                        photo_library
-                        </span>
-                <div class="galery-count">
-                    <h6 class="galery-count">13</h6>
-                </div>
+                <div class="keterangan">
+                    <h3 class="margin-0">WithUs.id</h3>
+                    <h5 class="margin-0">Decoration</h5>
+                    {{-- bintang --}}
+                    <div class="bintang">
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                    </div>
+                    
+                    {{-- atribute --}}
+                    <div class="atribute">
+                        {{-- love --}}
+                        <div class="favorite">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        <div class="love-count">
+                            <h6 class="love-count">9</h6>
+                        </div>  
+                        </div>
+                        
+                        {{-- galery --}}
+                        <div class="galery">
+                            <span class="material-symbols-outlined">
+                                photo_library
+                                </span>
+                        <div class="galery-count">
+                            <h6 class="galery-count">13</h6>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
             
              {{-- paste --}}
              <div class="frame">
@@ -577,8 +577,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-        
-</div>
     
 @endsection

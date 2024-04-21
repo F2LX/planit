@@ -28,9 +28,9 @@
                 <span class="material-symbols-outlined">
                     alarm_on
                 </span> 
-                <h3 class="ml-5 on-going-text">Taylor Series Vendor | User name here </h3>
+                <h3 class="ml-5 on-going-text">Taylor Series Vendor | Jesselyn Laurencia </h3>
             </div>    
-            <button class="contact-vendor">Contact Complain</button>
+            <button class="contact-vendor">Handle Complain</button>
         </div>
         <h2 class="text-center">Upcoming Events</h2>
         <div class="d-flex w-100">

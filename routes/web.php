@@ -78,9 +78,7 @@ Route::get('/admin/support-desk', [AdminController::class, 'supportdesk']);
 Route::get('/', [AuthController::class, 'index']);
 
 Route::get('/login', [AuthController::class, 'login']);
-Route::group(['middleware' => 'web'], function () {
-    Route::get('/logout',[AuthController::class,'logout']);
-});
+Route::get('/logout',[AuthController::class,'logout']);
 Route::get('/register', [AuthController::class, 'register']);
 
 Route::post('/register/create', [AuthController::class, 'store']);

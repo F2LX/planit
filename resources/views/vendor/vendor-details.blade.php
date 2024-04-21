@@ -37,7 +37,7 @@
             star
         </span>
     </div>
-    <button class="chatnow-box btn btn-green">Chat Now!</button>
+    <a class="chatnow-box btn btn-green" href="/user/support">Chat Now!</a>
     <div class="ml-20 mr-20">
         <div class="d-flex  text-justify">
             <p>

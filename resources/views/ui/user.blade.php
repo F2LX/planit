@@ -47,8 +47,18 @@
                 </li>
                 <li class="{{ request()->is('user/profile') ? 'active' : '' }}">
                     <a href="/user/profile" class="nav-link d-flex align-center flex-direction-row">
-                        <span class="material-symbols-outlined">account_balance_wallet</span>
-                        <span class="nav-text">Wallet</span>
+                        <span class="material-symbols-outlined">
+                            account_circle
+                            </span>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                </li>
+                <li class="{{ request()->is('user/pay') ? 'active' : '' }}">
+                    <a href="/user/pay" class="nav-link d-flex align-center flex-direction-row">
+                        <span class="material-symbols-outlined">
+                            payments
+                            </span>
+                        <span class="nav-text">Payment</span>
                     </a>
                 </li>
                 <li class="{{ request()->is('user/support') ? 'active' : '' }}">
@@ -86,5 +96,9 @@
     <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="{{ asset("js/dashboard.js") }}"></script>
     <script src="{{ asset("js/pay.js")}}"></script>
+    <script src="{{ asset("js/uploadImage.js") }}"></script>
+    <script src="{{ asset("js/uploadImage2.js") }}"></script>
+    <script src="{{ asset("js/uploadImage3.js") }}"></script>
+    <script src="{{ asset("js/uploadAvatar.js") }}"></script>
 </body>
 </html>

@@ -51,10 +51,10 @@
 
 @keyframes colors {
   0% { stroke: #5E7153; }
-  25% { stroke: #000000; }
-  50% { stroke: #b0bb16; }
-  75% { stroke: #2f7393; }
-  100% { stroke: #aa3a3a; }
+  25% { stroke: #5E7153; }
+  50% { stroke: #5E7153; }
+  75% { stroke: #5E7153; }
+  100% { stroke: #5E7153; }
 }
 
 @keyframes dash {

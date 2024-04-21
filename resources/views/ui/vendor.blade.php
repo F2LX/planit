@@ -48,7 +48,10 @@
                 </li>
                 <li class="{{ request()->is('vendor/profile') ? 'active' : '' }}">
                     <a href="/vendor/profile" class="nav-link d-flex align-center flex-direction-row">
-                        <span class="material-symbols-outlined">account_balance_wallet</span><span class="nav-text">Wallet</span>
+                        <span class="material-symbols-outlined">
+                            account_circle
+                            </span>
+                        <span class="nav-text">Profile</span>
                     </a>
                 </li>
                 <li class="{{ request()->is('vendor/support') ? 'active' : '' }}">

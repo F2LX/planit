@@ -1,8 +1,5 @@
 /* sisil punya hehehe */
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     background-color: white;
     /* padding-left: 10px; */
@@ -22,7 +19,7 @@
 .Category {
     display: flex;
     align-items: center;
-    height: 130%;
+    height: 10%;
     width: 30%;
 }
 .City {
@@ -51,7 +48,9 @@
 .gambarWrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     height: 400px;
+    gap: 20px;
     width: 100%;
     justify-content: space-around;
 }

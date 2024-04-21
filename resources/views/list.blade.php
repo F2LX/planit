@@ -2,9 +2,10 @@
 
 @section('content')
     <div class="wrapper">
-        <div class="judulWrapper">
-            <h1 class="judul">Vendors</h1>
-        </div>
+        
+        <h2 class="bigtitle2">All Vendors</h2>
+        <h2 class="smalltitle">search and be your style !</h2>
+        
         <div class="findWrapper">
             <select class="Category" name="Category" id="">
                 <option value="Category"hidden>All Category</option>
@@ -46,7 +47,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Weddingku</h3>
-                    <h5 class="margin-0">Hotel Venue</h5>
+                    <h5 class="margin-0 opacity-6">Hotel Venue</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -100,7 +101,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Bersama_Selamanya.id</h3>
-                    <h5 class="margin-0">Restaurant Venue</h5>
+                    <h5 class="margin-0 opacity-6">Restaurant Venue</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -154,7 +155,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Mydream.com</h3>
-                    <h5 class="margin-0">Decoration</h5>
+                    <h5 class="margin-0 opacity-6">Decoration</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -207,7 +208,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Cerita Kita</h3>
-                    <h5 class="margin-0">Hotel Venue</h5>
+                    <h5 class="margin-0 opacity-6">Hotel Venue</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -261,7 +262,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Cerita Kita Organizer</h3>
-                    <h5 class="margin-0">Stylist</h5>
+                    <h5 class="margin-0 opacity-6">Stylist</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -313,7 +314,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Weddingku</h3>
-                    <h5 class="margin-0">Hotel Venue</h5>
+                    <h5 class="margin-0 opacity-6">Hotel Venue</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -367,7 +368,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Bersama_Selamanya.id</h3>
-                    <h5 class="margin-0">Restaurant Venue</h5>
+                    <h5 class="margin-0 opacity-6">Restaurant Venue</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -421,7 +422,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Mydream.com</h3>
-                    <h5 class="margin-0">Decoration</h5>
+                    <h5 class="margin-0 opacity-6">Decoration</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -474,7 +475,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Cerita Kita</h3>
-                    <h5 class="margin-0">Hotel Venue</h5>
+                    <h5 class="margin-0 opacity-6">Hotel Venue</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">
@@ -528,7 +529,7 @@
                 
                 <div class="keterangan">
                     <h3 class="margin-0">Cerita Kita Organizer</h3>
-                    <h5 class="margin-0">Stylist</h5>
+                    <h5 class="margin-0 opacity-6">Stylist</h5>
                     {{-- bintang --}}
                     <div class="bintang">
                         <span class="material-symbols-outlined">

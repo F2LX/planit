@@ -31,8 +31,10 @@
 }
 
 .big-text-plan-naomi {
-    font-size: 90px;
-    background: linear-gradient(to left, transparent, #5e7153);
+    font-size: 120px;
+    margin-bottom: 40px;
+    margin-left: 410px;
+    background: linear-gradient(to right, #5e715314, #516147);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,13 +42,13 @@
 
 .small-text-event-naomi {
     margin-top: -40px;
-    margin-right: 5px;
-    font-size: 45px;
-    background: linear-gradient(270deg, #5e7153, #5e7153);
+    font-size: 30px;
+    background: linear-gradient(60deg, transparent, #516147);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: right;
+    font-style: italic;
 }
 
 .card-naomi {
@@ -73,10 +75,37 @@
     text-align: center;
     margin-top: 0px;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #5f6f52, #a1e9b5);
+    background: linear-gradient(180deg, #5f6f52, #5161478f);
+    /* background-color: #516147; */
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.bigtitle2 {
+    padding: 0;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, #5f6f52, #5161478f);
+    /* background-color: #516147; */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.smalltitle {
+    padding: 0;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    /* background: linear-gradient(180deg, #5f6f52, rgba(161, 233, 181, 0.279)); */
+    background-color: #516147af;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-style: italic;
 }
 
 .image {
@@ -95,6 +124,7 @@
     margin: 0;
     font-weight: 2500;
     color: #fcfce4;
+    margin-bottom: 1px;
 }
 
 .price {
@@ -103,6 +133,8 @@
     padding: 0;
     margin: 0;
     color: #fcfce4;
+    opacity: 0.8;
+    margin-bottom: 5px;
 }
 
 .star {
@@ -118,6 +150,8 @@
     margin-top: 50px;
     flex-direction: row;
     background-color: #5f6f52;
+    padding: 10px;
+    box-sizing: border-box;
     /* gap: 10px; */
 }
 
@@ -128,7 +162,7 @@
     height: 50%;
     margin-top: 20px;
     margin: 10px;
-    background-color: #a9b489;
+    background-color: #c2caa8;
     border-radius: 30px;
 }
 
@@ -147,7 +181,7 @@
     /* padding-left: 50px; */
     margin: 0;
     margin-right: 10px;
-    color: beige;
+    color: #5f6f52;
 }
 
 .card2 {
@@ -169,6 +203,7 @@
     padding: 0;
     margin: 10px 0 0 10px;
     color: #fcfce4;
+    margin-top: 20px;
 }
 
 .position {
@@ -200,15 +235,20 @@
     transform: scale(1.05);
 }
 
+.bigtitle2:hover {
+    transition: 0.4s ease;
+    transform: scale(1.05);
+}
+
 .judul {
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 15px;
-    font-weight: 2500;
-    color: #fcfce4;
+    font-weight: bold;
+    color: #3c4734;
 }
 
 .subjudul {
@@ -218,4 +258,27 @@
     margin: 0;
     margin-bottom: 10px;
     color: #fcfce4;
+    opacity: 0.8;
+}
+
+.see-more{
+    background-color: #c2caa8;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid;
+    font-weight: bold;
+    color: #3c4734;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.see-more:hover {
+    transition: 0.4s ease;
+    transform: scale(1.05);
 }

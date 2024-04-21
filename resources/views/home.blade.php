@@ -4,8 +4,8 @@
     <div class="utama">
         <div class="wrapper-home">
             <div class="section-search-naomi">
-                <h1 class="big-text-plan-naomi">PLAN</h1>
-                <h2 id="main" class="small-text-event-naomi">YOUR EVENT NOW</h2>
+                <h1 class="big-text-plan-naomi">PLAN IT</h1>
+                <h2 id="main" class="small-text-event-naomi">and make it happen!</h2>
                 <form class="searchbar d-flex justify-content-center " action="" method="get">
                     @csrf
                     <input type="text" name="search" id="search" placeholder="Event organizer, birthday party, wedding organizer">
@@ -18,7 +18,8 @@
         </div>
         
         <div class="section-top-vendor-naomi">
-           <h2 class="bigtitle">Plan Your Event Now!</h2>
+           <h2 class="bigtitle">Our Top Vendors</h2>
+           <h2 class="smalltitle">make your event special now !</h2>
             <div class="classdiv">
                 <div class="card-naomi">
                     <img class="image" src="https://t.ly/t8yhZ" alt="">
@@ -45,7 +46,7 @@
 
                 <div class="card-naomi">
                     <img class="image" src="https://t.ly/WaJdC" alt="">
-                    <h3 class="title">Regression Event</h3>
+                    <h3 class="title">Regression</h3>
                     <p class="price">Start from $750</p>
                     <div class="star">
                         <span class="material-symbols-outlined">
@@ -205,7 +206,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="flex-center">
+            
+            <a href="./list" class="see-more">See More Vendors</a>
+        </div>
         
+        <h2 class="bigtitle2">Our Testimonials</h2>
+        <h2 class="smalltitle">we love to make people happy !</h2>
         <div class="section-new">
             <div class="card-new">
                 <h1 class="judul">Testimonial</h1>
@@ -248,7 +256,7 @@
                 </div>
                 <div class="card3">
                     <h3 class="name">Raffi Ahmad</h3>
-                    <p class="position">CEO Of RANS</p>
+                    <p class="position">CEO of RANS</p>
                 </div>
             </div>
         </div>

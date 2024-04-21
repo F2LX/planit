@@ -11,18 +11,16 @@
     {{-- Import Preloader CSS --}}
     <link rel="stylesheet" href="{{ asset("css/preloader.css") }}">
 
-    {{-- Import Mobile CSS --}}
-    <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
-
     @if(request()->is('/'))
         <link rel="stylesheet" href="{{ asset("css/home.css") }}">
     @endif
 
     {{-- If request->is('list') --}}
     @if (request()->is('list'))
-        <link rel="stylesheet" href="{{ asset("css/list.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/list.css") }}">
     @endif
-   
+   {{-- Import Mobile CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
 </head>
 <body>
     <nav class="d-flex main-nav justify-space-between align-center">
@@ -54,7 +52,20 @@
         @endif
         @yield("content")
     </div>
-
+    <div class="bottom-nav d-flex w-100 flex-direction-row">
+        <div class="bottom-child"><span class="material-symbols-outlined">
+            home
+            </span><p>Home</p></div>
+        <div class="bottom-child"><span class="material-symbols-outlined">
+            storefront
+            </span><p>Vendors</p></div>
+        <div class="bottom-child"><span class="material-symbols-outlined">
+            app_registration
+            </span><p>Register</p></div>
+        <div class="bottom-child"><span class="material-symbols-outlined">
+            person
+            </span><p>Login</p></div>
+    </div>
     <script src="{{ asset("js/preloader.js") }}"></script> 
 </body>
 </html>

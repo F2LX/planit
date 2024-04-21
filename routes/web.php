@@ -58,7 +58,7 @@ Route::get('/vendor/ads-list', [VendorController::class, 'adslist']);
 Route::get('/vendor/create', [VendorController::class, 'details']);
 Route::post('/vendor/create/post', [VendorController::class, 'store']);
 Route::get('/vendor/update', [VendorController::class, 'idxupdate']);
-Route::get('/details/{id}', [VendorController::class, 'vendorDetails']);
+Route::get('/details/{id}', [VendorController::class, 'details']);
 Route::put('/vendor/update/put', [VendorController::class, 'updateVendor']);
 
 // Vendor: Ads
@@ -74,10 +74,6 @@ Route::get('/admin/category', [AdminController::class, 'category']);
 Route::get('/admin/advertisement', [AdminController::class, 'advertisement']);
 Route::get('/admin/profile', [AdminController::class, 'profile']);
 Route::get('/admin/support-desk', [AdminController::class, 'supportdesk']);
-
-// Route::get('/contoh2', function() {
-//     return view('home');
-// });
 
 Route::get('/', [AuthController::class, 'index']);
 

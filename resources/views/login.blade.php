@@ -12,6 +12,11 @@
 <body>
     <div class="wrapper d-flex justify-content-center align-center flex-wrap flex-direction-column">
         <div class="outerpanel">
+        @if(session('error'))
+            <div class="error">
+                  <p>{{ session('error') }}</p>
+            </div>
+        @endif
             <div class="loginpanel">
                 <h2 id="login-text">Login</h2>
                 <form class=" d-flex flex-direction-column" action="/login/validate" method="post">

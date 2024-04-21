@@ -1,4 +1,4 @@
-@extends('ui.user')
+@extends('ui.admin')
 
 @section('content')
     <div class="p-5">
@@ -24,8 +24,8 @@
             <div class="align-center justify-center left-bar-chat">
 
                 <div class="d-flex flex-direction-column align-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1462062651745-495db7fa268a?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile" class="profile-chat">
-                    <h4 class="name-chat">Didi Mulyano</h4>
+                    <img src="{{ Storage::url(auth()->user()->image) }}" alt="Profile" class="profile-chat">
+                    <h4 class="name-chat">{{ auth()->user()->name }}</h4>
                     <h6 class="available-status">Available</h6>
                 </div>
 

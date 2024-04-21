@@ -12,6 +12,13 @@
 <body>
     <div class="wrapper d-flex justify-content-center align-center flex-wrap flex-direction-column">
         <div class="outerpanel">
+            @error('email')
+                <div class="error">
+                    <p>
+                        Email telah didaftarkan sebelumnya.
+                    </p>
+                </div>
+            @enderror
             <div class="loginpanel register">
                 <h2 id="login-text">Register</h2>
                 <form class="d-flex flex-direction-column" action="/register/create" method="post">

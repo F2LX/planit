@@ -13,4 +13,5 @@ class Chat extends Model
         'receiverid',
         'message'
     ];
+    protected $guarded = ['id'];
 }

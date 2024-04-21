@@ -18,4 +18,6 @@ class Vendor extends Model
         'img3',
         'rate'
     ];
+
+    protected $guarded = ['id'];
 }

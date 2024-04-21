@@ -2,9 +2,9 @@
 .wrapper{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     background-color:white;
-    padding-left: 10px;
   }
   .judulWrapper{
     display: flex;
@@ -66,8 +66,6 @@
     top: 0;
     right: 0;
     z-index: 2;
-    margin-right: 10px;
-    margin-top: 10px;
     background-color:rgba(212, 41, 41, 0.893);
     width: 50%;
     height: 12%;
@@ -83,7 +81,7 @@
     height: 85%;
     width: 17%;
     border-radius: 10px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     color: #fcfce4;
  }
 

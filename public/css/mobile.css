@@ -9,6 +9,15 @@
     .card-naomi {
         width: 35% !important;
     }
+    .gambarWrapper {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
+    .frame {
+        width: 40% !important;
+        /* flex-wrap: wrap; */
+    }
 
     .section-new {
         display: flex;

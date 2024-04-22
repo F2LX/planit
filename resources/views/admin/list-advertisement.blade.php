@@ -24,7 +24,7 @@
                 </tr>
              
                 <tr>
-                    <td>12</td>
+                    <td>1</td>
                     <td>Party Boys</td>
                     <td>$900</td>
                     <td>Taylor Series</td>
@@ -38,7 +38,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>13</td>
+                    <td>2</td>
                     <td>Winter Birthday Theme Package</td>
                     <td>$450</td>
                     <td>Taylor Series</td>
@@ -52,7 +52,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>14</td>
+                    <td>3</td>
                     <td>Girl's Packet</td>
                     <td>$600</td>
                     <td>Taylor Series</td>
@@ -67,7 +67,7 @@
                 </tr>
             </table>
         </div>
-        <a href="#popupSuccess" class="add-order">Add New Order</a>
+        <a href="#popupSuccess" class="add-order">Add New Ads</a>
 
         <div class="popup" id="popupSuccess">
             <div class="popupSuccess-content">

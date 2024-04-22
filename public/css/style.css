@@ -2042,3 +2042,7 @@ textarea{
 .outerpanel:has(.error) {
     background: #cc0202;
 }
+
+.upcoming-event-text{
+    color: #5F6F52;
+}

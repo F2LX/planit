@@ -15,10 +15,6 @@
 
             </div>
             
-            <div class="d-flex flex-direction-column align-center justify-content-between">
-                <h3 class="e-wallet-tulisan">Event Package Name</h3>
-                <h2 class="judul-tulisan mt-0">PARTY BOYS</h2>
-            </div>
         </div>
 
         <h3 class="on-going-tulisan">Latest Complain</h3>
@@ -32,7 +28,7 @@
             </div>    
             <button class="contact-vendor">Handle Complain</button>
         </div>
-        <h2 class="text-center">Upcoming Events</h2>
+        <h2 class="text-center upcoming-event-text">Upcoming Events</h2>
         <div class="d-flex w-100">
             <div class="w-100">
                 <div class="carousel-container">

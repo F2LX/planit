@@ -3,7 +3,7 @@
 @section('content')
     <div class="p-5">
     
-        <form class="input-cat" action="" method="post"><input  placeholder="Add new category" type="text" name="" id=""></form>
+        {{-- <form class="input-cat" action="" method="post"><input  placeholder="Add new category" type="text" name="" id=""></form> --}}
         {{-- siapatau mau pake --}}
         {{-- <a href="#popupSuccess" class="add-order">Add New Order</a> --}}
         <div class="d-flex align-center justify-content-between" id="searchbar-list">
@@ -206,6 +206,7 @@
                 </tr>
             </table>
         </div>
+        <a href="#popupSuccess" class="add-order">Add New Category</a>
 
         <div class="popup" id="popupSuccess">
             <div class="popupSuccess-content">

@@ -195,20 +195,20 @@
                         <p>...</p>
                     </div>
                 </div>
-                <div class="background-input d-flex">
-                    <input type="text" id="message-input2" placeholder="Type your message...">
-                    <div class="d-flex align-center justify-center">
-                        <button id="send-button2">
-                            <span class="material-symbols-outlined">
-                                add_a_photo
-                            </span>
-                        </button>
-                        <button id="send-button">
-                            <span class="material-symbols-outlined">
-                                send
-                            </span>
-                        </button>
-                    </div>
+            </div>
+            <div class="background-input3 d-flex">
+                <input type="text" id="message-input2" placeholder="Type your message...">
+                <div class="d-flex align-center justify-center">
+                    <button id="send-button2">
+                        <span class="material-symbols-outlined">
+                            add_a_photo
+                        </span>
+                    </button>
+                    <button id="send-button">
+                        <span class="material-symbols-outlined">
+                            send
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>

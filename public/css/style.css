@@ -925,6 +925,12 @@ table tr td p{
     width: 48.2%;
 }
 
+.background-input3{
+    background-color: #f1f1f1;
+    border: 10px;
+    padding: 7px 8px;
+}
+
 .background-input2{
     background-color: #f1f1f1;
     border: 10px;

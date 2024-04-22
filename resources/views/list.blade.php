@@ -1,7 +1,7 @@
 @extends('ui.main')
 
 @section('content')
-    <div class="wrapper">
+    <div class="wrapper mb-5">
         
         <h2 class="bigtitle2">All Vendors</h2>
         <h2 class="smalltitle">search and be your style !</h2>

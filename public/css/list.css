@@ -75,7 +75,7 @@
     top: 0;
     right: 0;
     z-index: 2;
-    background-color:rgba(212, 41, 41, 0.893);
+    background-color: rgba(212, 41, 41, 0.893);
     width: 50%;
     height: 12%;
     border-radius: 8px;
@@ -160,7 +160,7 @@
     margin: 0px;
 }
 
-.opacity-6{
+.opacity-6 {
     opacity: 0.6;
 }
 
@@ -192,4 +192,8 @@
 .bigtitle2:hover {
     transition: 0.4s ease;
     transform: scale(1.05);
+}
+
+.mb-5 {
+    margin-bottom: 175px;
 }

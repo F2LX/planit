@@ -37,6 +37,10 @@
                 @endforeach
                 @endif
             </table>
+            @if (!$ads)
+            <p class="text-center">No ads available</p>
+            @endif
+           
         </div>
         <a href="/vendor/create-ads" class="add-order">Add New Ads</a>
         {{-- <tr>

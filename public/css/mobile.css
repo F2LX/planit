@@ -58,8 +58,28 @@
         }
         
     }
+    .bottom-child a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     nav {
         position:relative !important;
+    }
+    .bottom-padding {
+        height: 100px;
+        width: 100%;
+    }
+
+    .menu,.menu-padding {
+        display: none;
+    }
+    .btn-minimize {
+        display: none;
+    }
+    .content .p-5 {
+        padding: 0;
     }
 }
 /* Mobile */

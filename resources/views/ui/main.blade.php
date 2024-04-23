@@ -52,19 +52,20 @@
         @endif
         @yield("content")
     </div>
+    <div class="bottom-padding"></div>
     <div class="bottom-nav d-flex w-100 flex-direction-row">
-        <div class="bottom-child"><span class="material-symbols-outlined">
+        <div class="bottom-child"><a href="/"><span class="material-symbols-outlined">
             home
-            </span><p>Home</p></div>
-        <div class="bottom-child"><span class="material-symbols-outlined">
+            </span><p>Home</p></a></div>
+        <div class="bottom-child"><a href="/list"><span class="material-symbols-outlined">
             storefront
-            </span><p>Vendors</p></div>
-        <div class="bottom-child"><span class="material-symbols-outlined">
+            </span><p>Vendors</p></a></div>
+        <div class="bottom-child"><a href="/register"><span class="material-symbols-outlined">
             app_registration
-            </span><p>Register</p></div>
-        <div class="bottom-child"><span class="material-symbols-outlined">
+            </span><p>Register</p></a></div>
+        <div class="bottom-child"><a href="/login"><span class="material-symbols-outlined">
             person
-            </span><p>Login</p></div>
+            </span><p>Login</p></a></div>
     </div>
     <script src="{{ asset("js/preloader.js") }}"></script> 
 </body>

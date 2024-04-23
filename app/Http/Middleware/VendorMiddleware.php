@@ -18,6 +18,6 @@ class VendorMiddleware
         if (auth()->user()->role==='vendor') {
             return $next($request);
         }
-        return route('login');
+        return redirect('/login');
     }
 }

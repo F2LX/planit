@@ -92,7 +92,24 @@
         </div>
     </div>
     
-
+    <div class="bottom-padding"></div>
+    <div class="bottom-nav d-flex w-100 flex-direction-row">
+        <div class="bottom-child"><a href="/user"><span class="material-symbols-outlined">
+            home
+            </span><p>Home</p></a></div>
+        <div class="bottom-child"><a href="/user/ordersummary"><span class="material-symbols-outlined">
+            storefront
+            </span><p>Vendors</p></a></div>
+        <div class="bottom-child"><a href="/profile"><span class="material-symbols-outlined">
+            app_registration
+            </span><p>Register</p></a></div>
+        <div class="bottom-child"><a href="/payment"><span class="material-symbols-outlined">
+            person
+            </span><p>Login</p></a></div>
+            <div class="bottom-child"><a href="/payment"><span class="material-symbols-outlined">
+                person
+                </span><p>Contact Support</p></a></div>
+    </div>
     <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="{{ asset("js/dashboard.js") }}"></script>
     <script src="{{ asset("js/pay.js")}}"></script>

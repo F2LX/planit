@@ -37,8 +37,7 @@
 
 .big-text-plan-naomi {
     font-size: 115px;
-    margin-bottom: 40px;
-    margin-left: 410px;
+    text-align: right;
     background: linear-gradient(to right, #5e715314, #516147);
     background-clip: text;
     -webkit-background-clip: text;

@@ -49,16 +49,16 @@ Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/support', [UserController::class, 'contactsupport']);
 
 // Vendor
-Route::get('/vendor/profile', [VendorController::class, 'profile']);
-Route::get('/vendor', [VendorController::class, 'index']);
-Route::get('/vendor/ordersummary', [VendorController::class, 'ordersummary']);
-Route::get('/vendor/support', [VendorController::class, 'contactsupport']);
-Route::get('/vendor/create-ads', [VendorController::class, 'ads']);
-Route::get('/vendor/ads-list', [VendorController::class, 'adslist']);
-Route::get('/vendor/create', [VendorController::class, 'details']);
+Route::get('/vendor/profile', [VendorController::class, 'profile'])->middleware('vendor');
+Route::get('/vendor', [VendorController::class, 'index'])->middleware('vendor');
+Route::get('/vendor/ordersummary', [VendorController::class, 'ordersummary'])->middleware('vendor');
+Route::get('/vendor/support', [VendorController::class, 'contactsupport'])->middleware('vendor');
+Route::get('/vendor/create-ads', [VendorController::class, 'ads'])->middleware('vendor');
+Route::get('/vendor/ads-list', [VendorController::class, 'adslist'])->middleware('vendor');
+Route::get('/vendor/create', [VendorController::class, 'details'])->middleware('vendor');
 Route::post('/vendor/create/post', [VendorController::class, 'store']);
 Route::get('/vendor/update', [VendorController::class, 'idxupdate']);
-Route::get('/details/{id}', [VendorController::class, 'details']);
+Route::get('/details/{id}', [VendorController::class, 'details'])->middleware('vendor');
 Route::put('/vendor/update/put', [VendorController::class, 'updateVendor']);
 
 // Vendor: Ads
@@ -68,12 +68,12 @@ Route::delete('/vendor/ads/delete/{id}', [AdsController::class, 'destory']);
 
 
 // Admin
-Route::get('/admin', [AdminController::class, 'index']);
-Route::get('/admin/order', [AdminController::class, 'order']);
-Route::get('/admin/category', [AdminController::class, 'category']);
-Route::get('/admin/advertisement', [AdminController::class, 'advertisement']);
-Route::get('/admin/profile', [AdminController::class, 'profile']);
-Route::get('/admin/support-desk', [AdminController::class, 'supportdesk']);
+Route::get('/admin', [AdminController::class, 'index'])->middleware('admin');
+Route::get('/admin/order', [AdminController::class, 'order'])->middleware('admin');
+Route::get('/admin/category', [AdminController::class, 'category'])->middleware('admin');
+Route::get('/admin/advertisement', [AdminController::class, 'advertisement'])->middleware('admin');
+Route::get('/admin/profile', [AdminController::class, 'profile'])->middleware('admin');
+Route::get('/admin/support-desk', [AdminController::class, 'supportdesk'])->middleware('admin');
 
 Route::get('/', [AuthController::class, 'index']);
 

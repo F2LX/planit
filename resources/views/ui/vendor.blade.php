@@ -22,6 +22,9 @@
     {{-- Mobile CSS --}}
     <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
 
+    {{-- Import Dashboard User Specific CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/dashboard-vendor.css") }}">
+
     <title>Plan It - Vendor Area</title>
 </head>
 <body class="dashboard">
@@ -85,7 +88,26 @@
             @yield('content')
         </div>
     </div>
-
+    <div class="bottom-padding"></div>
+    <div class="bottom-nav d-flex w-100 flex-direction-row">
+        <div class="bottom-child"><a href="/vendor"><span class="material-symbols-outlined">
+            home
+            </span><p>Home</p></a></div>
+        <div class="bottom-child"><a href="/vendor/ordersummary">
+            <span class="material-symbols-outlined">description</span>
+            <p>Order Summary</p></a></div>
+            <div class="bottom-child"><a href="/vendor/ads-list">
+                <span class="material-symbols-outlined">
+                    account_circle
+                    </span>
+                <p>Advertisement</p></a></div>
+        <div class="bottom-child"><a href="/vendor/profile">
+            <span class="material-symbols-outlined">
+                account_circle
+                </span>
+            <p>Profile</p></a></div>
+            <div class="bottom-child"><a href="/vendor/support"><span class="material-symbols-outlined">contact_support</span>
+                <p>Support</p></a></div>
     <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="{{ asset("js/dashboard.js") }}"></script>
     <script src="{{ asset("js/uploadImage.js") }}"></script>

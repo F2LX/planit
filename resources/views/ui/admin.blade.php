@@ -21,6 +21,9 @@
 
     {{-- Mobile CSS --}}
     <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
+
+    {{-- Import Dashboard User Specific CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/dashboard-admin.css") }}">
     
     <title>Plan It - Admin Area</title>
 </head>
@@ -95,7 +98,25 @@
             @yield('content')
         </div>
     </div>
-    
+    <div class="bottom-padding"></div>
+    <div class="bottom-nav d-flex w-100 flex-direction-row">
+        <div class="bottom-child"><a href="/admin"><span class="material-symbols-outlined">
+            home
+            </span><p>Home</p></a></div>
+        <div class="bottom-child"><a href="/admin/ordersummary">
+            <span class="material-symbols-outlined">description</span>
+            <p>Order Summary</p></a></div>
+        <div class="bottom-child"><a href="/admin/category"><span class="material-symbols-outlined">
+            app_registration
+            </span><p>Category</p></a></div>
+            <div class="bottom-child"><a href="/admin/ads-list"><span class="material-symbols-outlined">ads_click</span>
+                <p>Advertisement</p></a></div>
+        <div class="bottom-child"><a href="/admin/profile"><span class="material-symbols-outlined">
+            person
+            </span><p>Profile</p></a></div>
+            <div class="bottom-child"><a href="/support-desk"><span class="material-symbols-outlined">contact_support</span>
+                <p>Support Desk</p></a></div>
+    </div>
     <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="{{ asset("js/dashboard.js") }}"></script>
     <script src="{{ asset("js/uploadImage.js") }}"></script>

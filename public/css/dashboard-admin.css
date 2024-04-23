@@ -1,0 +1,16 @@
+/* Tablet */
+@media only screen and (max-width: 700px) {
+    .bottom-child {
+        width: 16%;
+        padding-top: 12px;
+        text-align: center;
+    }
+    .content {
+        height: 80vh !important;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 450px) {
+    
+}

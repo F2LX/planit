@@ -22,10 +22,12 @@
     {{-- Mobile CSS --}}
     <link rel="stylesheet" href="{{ asset("css/mobile.css") }}">
 
+    {{-- Import Dashboard User Specific CSS --}}
+    <link rel="stylesheet" href="{{ asset("css/dashboard-user.css") }}">
+
     <title>User Area - Plan It</title>
 </head>
 <body class="dashboard">
-
     <div class="wrapper d-flex">
         <div class="menu-padding"></div>
         <div class="menu">
@@ -97,18 +99,21 @@
         <div class="bottom-child"><a href="/user"><span class="material-symbols-outlined">
             home
             </span><p>Home</p></a></div>
-        <div class="bottom-child"><a href="/user/ordersummary"><span class="material-symbols-outlined">
-            storefront
-            </span><p>Vendors</p></a></div>
-        <div class="bottom-child"><a href="/profile"><span class="material-symbols-outlined">
-            app_registration
-            </span><p>Register</p></a></div>
-        <div class="bottom-child"><a href="/payment"><span class="material-symbols-outlined">
-            person
-            </span><p>Login</p></a></div>
-            <div class="bottom-child"><a href="/payment"><span class="material-symbols-outlined">
-                person
-                </span><p>Contact Support</p></a></div>
+        <div class="bottom-child"><a href="/user/ordersummary">
+            <span class="material-symbols-outlined">description</span>
+            <p>Order Summary</p></a></div>
+        <div class="bottom-child"><a href="/user/profile">
+            <span class="material-symbols-outlined">
+                account_circle
+                </span>
+            <p>Profile</p></a></div>
+        <div class="bottom-child"><a href="/user/pay">
+            <span class="material-symbols-outlined">
+                payments
+                </span>
+            <p>Payment</p></a></div>
+            <div class="bottom-child"><a href="/user/support"><span class="material-symbols-outlined">contact_support</span>
+                <p>Support</p></a></div>
     </div>
     <script src="{{ asset("js/preloader.js") }}"></script>
     <script src="{{ asset("js/dashboard.js") }}"></script>
